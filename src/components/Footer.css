@@ -1,0 +1,7 @@
+.Footer{
+    grid-area: footer;
+    width: 100vw;
+    text-align: center;
+    background-color: var(--color-encabezado);
+    color: var(--color-fondo-claro);
+}

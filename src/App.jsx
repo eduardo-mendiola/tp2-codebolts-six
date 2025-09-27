@@ -1,16 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import Sidebar from './components/Sidebar.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1>CODEBOLTS SIX</h1>
-    </>
-  )
+    <div style={{ display: 'flex', minHeight: '100vh', flexDirection: 'column' }}>
+      <div style={{ display: 'flex', flex: 1 }}>
+        <Sidebar />
+        <main style={{ padding: '20px', flex: 1 }}>
+          <h1>CODEBOLTS SIX</h1>
+        </main>
+      </div>
+      <Footer />
+    </div>
+   
+  );
 }
 
 export default App
