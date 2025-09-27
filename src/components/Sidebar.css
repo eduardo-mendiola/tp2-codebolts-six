@@ -22,11 +22,12 @@
   gap: 40px;
 }
 
-.nav-links a {
+.nav-links button {
+  background-color: var(--color-encabezado);
   color: var(--color-fondo);
   text-decoration: none;
 }
 
-.nav-links a:hover {
+.nav-links button:hover {
   color: var(--color-secundario);
 }
