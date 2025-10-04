@@ -1,8 +1,7 @@
 import React, { useState } from 'react'; //guardo un estado que diga si el menú esta abierto o no
-import logo from '../assets/logo.png';
-import './Sidebar.css'; 
-
-import DropDownMenu from './DropDownMenu'; 
+import logo from '@/assets/logo.png'; //importo el logo
+import '@/components/Sidebar/Sidebar.css';
+import DropDownMenu from '@/components/DropDownMenu/DropDownMenu';
 
 export default function Sidebar({setPage}) {
 
