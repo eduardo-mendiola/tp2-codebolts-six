@@ -2,13 +2,7 @@
 .dropdown-menu{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+    align-items: center;
 }
-.dropdown-menu button{ 
-  
-  border-radius: 10%;
-  background-color: var(--color-encabezado);
-  color: var(--color-fondo);
-  font-family: var(--fuente-texto);
-  padding: 10px;
-}
+

@@ -8,6 +8,7 @@
   align-items: center;
   padding-top: 20px;
   font-family: var(--fuente-texto);
+  gap: 10%;
 }
 
 .logo {
@@ -19,7 +20,7 @@
 .nav-links {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
 }
 
 .nav-links button {
@@ -27,6 +28,8 @@
   color: var(--color-fondo);
   text-decoration: none;
   padding: 10px;
+  border: none;
+  font-size: 0.9rem;
 }
 
 .nav-links button:hover {
