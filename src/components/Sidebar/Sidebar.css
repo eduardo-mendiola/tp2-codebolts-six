@@ -1,6 +1,8 @@
 .sidebar {
-  width: 200px;
+  width: var(--sidebar-width);
   height: 100vh;
+  top: 0;
+  left: 0;
   background-color: var(--color-encabezado);
   color: var(--color-fondo);
   display: flex;
@@ -9,7 +11,9 @@
   padding-top: 20px;
   font-family: var(--fuente-texto);
   gap: 10%;
+  overflow-y: auto;
 }
+
 
 .logo {
   margin: 10px;
@@ -35,3 +39,7 @@
 .nav-links button:hover {
   color: var(--color-secundario);
 }
+
+
+
+
