@@ -1,0 +1,90 @@
+{
+    "lugares": [
+        {
+            "nombre": "Cataratas del Iguazú",
+            "ubicación": "Misiones",
+            "img":""
+        },
+        {
+            "nombre":"Mar del Plata",
+            "ubicación":"Buenos Aires",
+            "img":""
+        },
+        {
+            "nombre":"Sierra de la Ventana",
+            "ubicación":"Buenos Aires",
+            "img":""
+        },
+        {
+            "nombre":"Tandil",
+            "ubicación":"Buenos Aires",
+            "img":""
+        },
+        {
+            "nombre":"Mina Clavero",
+            "ubicación":"Córdoba",
+            "img":""
+        },
+        {
+            "nombre":"Villa Carlos Paz",
+            "ubicación":"Córdoba",
+            "img":""
+        },
+        {
+            "nombre":"San Carlos de Bariloche",
+            "ubicación":"Río Negro",
+            "img":""
+        },
+        {
+            "nombre":"Esquel",
+            "ubicación":"Chubut",
+            "img":""
+        },
+        {
+            "nombre":"Trevelin",
+            "ubicación":"Río Negro",
+            "img":""
+        },
+        {
+            "nombre":"Ushuaia",
+            "ubicación":"Tierra del Fuego",
+            "img":""
+        },
+        {
+            "nombre":"Santa Teresita",
+            "ubicación":"Buenos Aires",
+            "img":""
+        },
+        {
+            "nombre":"El Bolsón",
+            "ubicación":"Río Negro",
+            "img":""
+        },
+        {
+            "nombre":"Miramar",
+            "ubicación":"Buenos Aires",
+            "img":""
+        },
+        {
+            "nombre":"Lobos",
+            "ubicación":"Buenos Aires",
+            "img":""
+        },
+        {
+            "nombre":"San Rafael",
+            "ubicación":"Mendoza",
+            "img":""
+        },
+        {
+            "nombre":"Perito Moreno",
+            "ubicación":"Santa Cruz",
+            "img":""
+        },
+        {
+            "nombre":"El Chalten",
+            "ubicación":"Santa Cruz",
+            "img":""
+        }
+
+    ]
+}
