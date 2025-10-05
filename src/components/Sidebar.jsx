@@ -1,6 +1,6 @@
 import React, { useState } from 'react'; //guardo un estado que diga si el menú esta abierto o no
 import logo from '../assets/logo.png';
-import './Sidebar.css'; 
+import '../styles/Sidebar.css'; 
 
 import DropDownMenu from './DropDownMenu'; 
 

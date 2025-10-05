@@ -1,5 +1,5 @@
 import React from 'react';
-import './DropDownMenu.css';
+import '../styles/DropDownMenu.css';
 import MemberButton from './MemberButton'; 
 import imgCar from '../assets/car.png';
 import imgEdu from '../assets/eduardo.webp';
