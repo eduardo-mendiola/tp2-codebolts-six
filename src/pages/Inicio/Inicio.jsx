@@ -1,9 +1,3 @@
-<<<<<<< HEAD:src/pages/Inicio.jsx
-import '../styles/Inicio.css'
-
-
-=======
->>>>>>> origin/main:src/pages/Inicio/Inicio.jsx
 export default function Inicio() {
   return (
     <div className='sectionInicio'>
