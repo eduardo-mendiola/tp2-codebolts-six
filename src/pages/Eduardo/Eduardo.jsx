@@ -2,92 +2,90 @@ import Header from '@/components/Header/Header';
 import Section from '@/components/Section/Section';
 import Footer from '@/components/Footer/Footer';
 
+// || Imagenes importadas ||
+import eduardoHeader from '@/assets/eduardo/eduardo_header.webp';
+
+// Habilidades
+import construyendo from '@/assets/eduardo/construyendo.webp';
+import aprendizaje from '@/assets/eduardo/aprendizaje.webp';
+import leer from '@/assets/eduardo/leer.webp';
+import pizza from '@/assets/eduardo/pizza.webp';
+
+// Películas
+import bladeRunner from '@/assets/eduardo/blade_runner.webp';
+import theMatrix from '@/assets/eduardo/the_matrix.webp';
+import interstellar from '@/assets/eduardo/interstellar.webp';
+
+// Música
+import beatlesAbbeyRoad from '@/assets/eduardo/beatles_abbey_road.webp';
+import darkSide from '@/assets/eduardo/dark_side.webp';
+import blackAlbum from '@/assets/eduardo/black_album.webp';
+
 const Eduardo = () => {
+  const habilidades = [
+    { resource: construyendo, alt: "Diseñar y construir cosas", text: "Diseñar y construir cosas" },
+    { resource: aprendizaje, alt: "Aprendizaje continuo", text: "Aprendizaje continuo" },
+    { resource: leer, alt: "Leer cuentos para dormir", text: "Leer cuentos para dormir" },
+    { resource: pizza, alt: "Preparar pizzas", text: "Preparar pizzas" },
+  ];
 
-    const habilidades = [
-        {
-            resource: "/src/assets/eduardo/construyendo.webp",
-            alt: "Diseñar y construir cosas",
-            text: "Diseñar y construir cosas"
-        },
-        {
-            resource: "/src/assets/eduardo/aprendizaje.webp",
-            alt: "Aprendizaje continuo",
-            text: "Aprendizaje continuo"
-        },
-        {
-            resource: "/src/assets/eduardo/leer.webp",
-            alt: "Leer cuentos para dormir",
-            text: "Leer cuentos para dormir"
-        },
-        {
-            resource: "/src/assets/eduardo/pizza.webp",
-            alt: "Preparar pizzas",
-            text: "Preparar pizzas"
-        },
-    ];
+  const peliculas = [
+    {
+      resource: bladeRunner,
+      alt: "Blade Runner (1982)",
+      text: "Blade Runner (1982)",
+      href: "https://en.wikipedia.org/wiki/Blade_Runner",
+    },
+    {
+      resource: theMatrix,
+      alt: "The Matrix (1999)",
+      text: "The Matrix (1999)",
+      href: "https://en.wikipedia.org/wiki/The_Matrix",
+    },
+    {
+      resource: interstellar,
+      alt: "Interstellar (2014)",
+      text: "Interstellar (2014)",
+      href: "https://en.wikipedia.org/wiki/Interstellar_(film)",
+    },
+  ];
 
+  const musica = [
+    {
+      resource: beatlesAbbeyRoad,
+      alt: "Abbey Road - The Beatles",
+      text: "Abbey Road - The Beatles",
+      href: "https://www.youtube.com/watch?v=wqaKHHxQFZc&list=OLAK5uy_k2JcEE3_maNjnVBKU2s1JjhaZ4rxwgaME&index=2",
+    },
+    {
+      resource: darkSide,
+      alt: "Dark Side of the Moon - Pink Floyd",
+      text: "Dark Side of the Moon - Pink Floyd",
+      href: "https://www.youtube.com/watch?v=k9ynZnEBtvw",
+    },
+    {
+      resource: blackAlbum,
+      alt: "The Black Album - Metallica",
+      text: "The Black Album - Metallica",
+      href: "https://www.youtube.com/watch?v=CHIWNDAwTqQ&list=OLAK5uy_l3qf_fJNreo3L6_ZPIaLOquqfTda--gZc&index=2",
+    },
+  ];
 
-    const peliculas = [
-        {
-            resource: "/src/assets/eduardo/blade_runner.webp",
-            alt: "Blade Runner (1982)",
-            text: "Blade Runner (1982)",
-            href: "https://en.wikipedia.org/wiki/Blade_Runner"
-        },
-        {
-            resource: "/src/assets/eduardo/the_matrix.webp",
-            alt: "The Matrix (1999)",
-            text: "The Matrix (1999)",
-            href: "https://en.wikipedia.org/wiki/The_Matrix"
-        },
-        {
-            resource: "/src/assets/eduardo/interstellar.webp",
-            alt: "Interstellar (2014)",
-            text: "Interstellar (2014)",
-            href: "https://en.wikipedia.org/wiki/Interstellar_(film)"
-        },
-    ];
-
-    const musica = [
-        {
-            resource: "/src/assets/eduardo/beatles_abbey_road.webp",
-            alt: "Abbey Road - The Beatles",
-            text: "Abbey Road - The Beatles",
-            href: "https://www.youtube.com/watch?v=wqaKHHxQFZc&list=OLAK5uy_k2JcEE3_maNjnVBKU2s1JjhaZ4rxwgaME&index=2"
-        },
-        {
-            resource: "/src/assets/eduardo/dark_side.webp",
-            alt: "Dark Side of the Moon - Pink Floyd",
-            text: "Dark Side of the Moon - Pink Floyd",
-            href: "https://www.youtube.com/watch?v=k9ynZnEBtvw"
-        },
-        {
-            resource: "/src/assets/eduardo/black_album.webp",
-            alt: "The Black Album - Metallica",
-            text: "The Black Album - Metallica",
-            href: "https://www.youtube.com/watch?v=CHIWNDAwTqQ&list=OLAK5uy_l3qf_fJNreo3L6_ZPIaLOquqfTda--gZc&index=2"
-        },
-    ];
-
-
-
-    return (
-        <>
-            <Header
-                name="Eduardo"
-                lastName="Mendiola"
-                age="44"
-                city="Mar del Plata"
-                backgroundImage="/src/assets/eduardo/eduardo_header.webp"
-            />
-            <Section title="Habilidades" cards={habilidades} />
-            <Section title="Películas Favoritas" cards={peliculas} />
-            <Section title="Música Favorita" cards={musica} />
-
-            <Footer />
-        </>
-    );
-}
+  return (
+    <>
+      <Header
+        name="Eduardo"
+        lastName="Mendiola"
+        age="44"
+        city="Mar del Plata"
+        backgroundImage={eduardoHeader}
+      />
+      <Section title="Habilidades" cards={habilidades} />
+      <Section title="Películas Favoritas" cards={peliculas} />
+      <Section title="Música Favorita" cards={musica} />
+      <Footer />
+    </>
+  );
+};
 
 export default Eduardo;
