@@ -1,6 +1,6 @@
 .Footer {
   grid-area: footer;
-  width: calc(100vw - var(--sidebar-width));
+  width: var(--section-width);
   height: 50px;
   text-align: center;
   background-color: var(--color-encabezado);

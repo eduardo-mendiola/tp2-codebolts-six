@@ -65,4 +65,7 @@
 
     /* || CARD */
     --gap-card-section: 3rem;
+
+    /* || SECTION */
+    --section-width: calc(100vw - var(--sidebar-width));
 }
