@@ -2,12 +2,13 @@
 /* || SECTIONS / CARDS */
 
 .card {
+    --padding: 0.8rem;
     background-color: var(--color-background-section);
     color: var(--color-primary-text);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    padding: 0.8rem;
-    width: 18vw;
+    padding: var(--padding);
+    width: calc((100vw - var(--sidebar-width) - (var(--gap-card-section) * 4)) / 4);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
