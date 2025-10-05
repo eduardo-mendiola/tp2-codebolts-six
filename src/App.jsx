@@ -5,6 +5,7 @@ import Inicio from '@/pages/Inicio/Inicio';
 import Eduardo from '@/pages/Eduardo/Eduardo';
 import Carina from '@/pages/Carina/Carina';
 import Bitacora from '@/pages/Bitacora/Bitacora';
+import '@/styles/_reset.css';
 
 function App() {
   const [page, setPage] = useState('Inicio'); 

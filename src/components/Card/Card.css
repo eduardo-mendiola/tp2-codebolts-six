@@ -1,0 +1,37 @@
+
+/* || SECTIONS / CARDS */
+
+.card {
+    background-color: var(--color-background-section);
+    color: var(--color-primary-text);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 0.8rem;
+    width: 18vw;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-weight: 600;
+}
+
+/* || ANIMACIONES */
+
+.parallax-card {
+    transition: transform 0.2s ease;
+    transform-style: preserve-3d;
+}

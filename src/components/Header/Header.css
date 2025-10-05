@@ -1,5 +1,5 @@
 header {
-    background: url("../src/assets/eduardo/eduardo_header.webp") no-repeat center top;
+    /* background: url("../src/assets/eduardo/eduardo_header.webp") no-repeat center top; */
     background-size: cover;
     width: calc(100vw - var(--sidebar-width));
     height: 100vh;
@@ -16,19 +16,19 @@ header {
 }
 
 .header-left {
-    margin: 8rem 0.8rem;
+    margin: 5rem 0.8rem;
     padding: 1.5rem 1rem;
     align-self: flex-end;
 }
 
-.name_edu {
+.name {
     font-family: var(--font-primary);
     font-size: 4rem;
     margin: 0;
     color: var(--color-white-yellow);
 }
 
-.lastname_edu {
+.lastname {
     font-family: var(--font-primary);
     font-size: 6rem;
     font-weight: bold;
@@ -72,7 +72,7 @@ header {
 }
 
 
-.city_edu {
+.city {
     font-family: var(--font-primary);
     font-size: 3.2rem;
     font-weight: bold;
