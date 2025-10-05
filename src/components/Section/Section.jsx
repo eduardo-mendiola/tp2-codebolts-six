@@ -1,4 +1,4 @@
-import '@/components/Section/section.css';
+import '@/components/Section/Section.css';
 import Card from '@/components/Card/Card';
 
 const Section = ({ title, cards }) => {
