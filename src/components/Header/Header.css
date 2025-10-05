@@ -1,7 +1,7 @@
 header {
     /* background: url("../src/assets/eduardo/eduardo_header.webp") no-repeat center top; */
     background-size: cover;
-    width: calc(100vw - var(--sidebar-width));
+    width: var(--section-width);
     height: 100vh;
     /* overflow-x: hidden; */
     background-position: top center;

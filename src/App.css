@@ -1,13 +1,16 @@
 .app-container {
   display: grid;
-  grid-template-columns: var(--sidebar-width) calc(100vw - var(--sidebar-width)); 
+  grid-template-columns: var(--sidebar-width) calc(100% - var(--sidebar-width)); 
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .main-content {
   padding: 0; /* padding interno solo */
   height: 100vh;
   overflow-y: auto;
+  width: var(--section-width);
+  overflow-x: hidden;
 }
 
 /* .main-content {
