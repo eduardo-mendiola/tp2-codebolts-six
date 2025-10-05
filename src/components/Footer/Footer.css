@@ -1,0 +1,17 @@
+.Footer {
+  grid-area: footer;
+  width: calc(100vw - var(--sidebar-width));
+  height: 60px;
+  text-align: center;
+  background-color: var(--color-encabezado);
+  color: var(--color-fondo-claro);
+  display: flex;            
+  align-items: center;      
+  justify-content: center;  
+
+  p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}

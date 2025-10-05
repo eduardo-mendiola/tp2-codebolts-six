@@ -1,4 +1,4 @@
-import '../styles/MemberButton.css';
+import '@/components/MemberButton/MemberButton.css';
 
 export default function MemberButton({imgsrc, name, onClick}){
     return(

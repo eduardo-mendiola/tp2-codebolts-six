@@ -1,0 +1,26 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 2rem ;
+    /* background: url("../img/eduardo/eduardo_background_03.webp") no-repeat center/cover; */
+    background-position: top center;
+    height: 100vh;
+    width: calc(100vw - var(--sidebar-width));
+    gap: 3rem;
+    position: relative;
+    overflow: visible;
+}
+
+.section-title {
+    margin-top: 0.8rem;
+    font-weight: 500;
+    /* text-shadow: var(--text-shadow); */
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
