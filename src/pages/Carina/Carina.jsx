@@ -2,6 +2,8 @@ import React from "react";
 import Header from "@/components/Header/Header.jsx";
 import Section from "@/components/Section/Section.jsx";
 import Footer from "@/components/Footer/Footer.jsx";
+import lugares from "@/data/lugares.js";
+import Carrusel from "../../components/carrusel/carrusel";
 
 
 // 🖼️ Importamos las imágenes de Carina
@@ -73,6 +75,9 @@ export default function Carina() {
     },
   ];
 
+  const lugaresfav = lugares.filter(l => [9, 10, 12].includes(l.id));
+  
+
   return (
     <>
       <Header
@@ -87,7 +92,7 @@ export default function Carina() {
       <Section title="Habilidades" cards={habilidades} />
       <Section title="Mis Películas Favoritas" cards={peliculas} />
       <Section title="Mi Música" cards={musica} />
-
+      <Carrusel lugares={lugaresfav}/>
       <Footer />
     </>
   );
