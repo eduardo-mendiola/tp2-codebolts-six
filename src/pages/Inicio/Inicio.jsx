@@ -1,8 +1,10 @@
 export default function Inicio() {
   return (
-    <section>
-        <h1 class="equipo">"Codebolts Six"</h1>
-        <h2>Sobre Nosotros</h2>
+    <div className='sectionInicio'>
+        
+        <h1 class="teamName">"Codebolts Six"</h1>
+        
+                        <h2>Sobre Nosotros</h2>
                         <p>Somos un equipo de cinco estudiantes de la Tecnicatura en Desarrollo de Software,  unidos
                             con
                             el objetivo
@@ -15,7 +17,7 @@ export default function Inicio() {
                             conocimientos
                             en diseño web y desarrollo
                             que permita a los visitantes descubrir  más sobre cada uno de nosotros.</p>
-    </section>
+    </div>
     
          
                     
