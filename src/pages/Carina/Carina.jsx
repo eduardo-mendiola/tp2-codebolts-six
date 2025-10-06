@@ -2,75 +2,81 @@ import React from "react";
 import Header from "@/components/Header/Header.jsx";
 import Section from "@/components/Section/Section.jsx";
 import Footer from "@/components/Footer/Footer.jsx";
+import lugares from "@/data/lugares.js";
+import Carrusel from "../../components/carrusel/carrusel";
+
 
 // 🖼️ Importamos las imágenes de Carina
 import carinaHeader from "@/assets/carina/carina_header.webp";
 
 // Habilidades (pueden ser distintas, pero de momento usaremos las de ejemplo)
-import construyendo from "@/assets/eduardo/construyendo.webp";
-import aprendizaje from "@/assets/eduardo/aprendizaje.webp";
-import leer from "@/assets/eduardo/leer.webp";
-import pizza from "@/assets/eduardo/pizza.webp";
+import SkillOne from "@/assets/carina/SkillOne.png";
+import SkillTwo from "@/assets/carina/SkillTwo.png";
+import SkillThree from "@/assets/carina/SkillThree.png";
+import SkillFour from "@/assets/carina/SkillFour.png";
 
 // Películas
-import bladeRunner from "@/assets/eduardo/blade_runner.webp";
-import theMatrix from "@/assets/eduardo/the_matrix.webp";
-import interstellar from "@/assets/eduardo/interstellar.webp";
+import ButterflyEffect from "@/assets/carina/film1.jpg";
+import HarryPotter4 from "@/assets/carina/film2.jpg";
+import HideAndSeek from "@/assets/carina/film3.jpg";
 
 // Música
-import beatlesAbbeyRoad from "@/assets/eduardo/beatles_abbey_road.webp";
-import darkSide from "@/assets/eduardo/dark_side.webp";
-import blackAlbum from "@/assets/eduardo/black_album.webp";
+import ColdPlay from "@/assets/carina/music1.webp";
+import Ntvg from "@/assets/carina/music2.jpg";
+import GustavoCerati from "@/assets/carina/music3.jpg";
 
 export default function Carina() {
   const habilidades = [
-    { resource: construyendo, alt: "Diseñar y construir cosas", text: "Diseñar y construir cosas" },
-    { resource: aprendizaje, alt: "Aprendizaje continuo", text: "Aprendizaje continuo" },
-    { resource: leer, alt: "Leer cuentos para dormir", text: "Leer cuentos para dormir" },
-    { resource: pizza, alt: "Preparar pizzas", text: "Preparar pizzas" },
+    { resource: SkillOne, alt: "Cocinar", text: "Cocinar" },
+    { resource: SkillTwo, alt: "Enseñar", text: "Enseñar" },
+    { resource: SkillThree, alt: "Sacar Fotos", text: "Sacar Fotos" },
+    { resource: SkillFour, alt: "Leer", text: "Leer Libros" },
   ];
 
   const peliculas = [
     {
-      resource: bladeRunner,
-      alt: "Blade Runner (1982)",
-      text: "Blade Runner (1982)",
-      href: "https://en.wikipedia.org/wiki/Blade_Runner",
+      resource: ButterflyEffect,
+      alt: "Efecto mariposa",
+      text: "The Butterfly Effect",
+      href: "https://en.wikipedia.org/wiki/The_Butterfly_Effect",
     },
     {
-      resource: theMatrix,
-      alt: "The Matrix (1999)",
-      text: "The Matrix (1999)",
-      href: "https://en.wikipedia.org/wiki/The_Matrix",
+      resource: HarryPotter4,
+      alt: "Harry Potter y el Caliz de Fuego",
+      text: "Harry Potter y el Caliz de Fuego",
+      href: "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Goblet_of_Fire_(film)",
     },
     {
-      resource: interstellar,
-      alt: "Interstellar (2014)",
-      text: "Interstellar (2014)",
-      href: "https://en.wikipedia.org/wiki/Interstellar_(film)",
+      resource: HideAndSeek,
+      alt: "Hide and Seek",
+      text: "Hide and Seek",
+      href: "https://en.wikipedia.org/wiki/Hide_and_Seek_(2005_film)",
     },
   ];
 
   const musica = [
     {
-      resource: beatlesAbbeyRoad,
-      alt: "Abbey Road - The Beatles",
-      text: "Abbey Road - The Beatles",
-      href: "https://www.youtube.com/watch?v=wqaKHHxQFZc&list=OLAK5uy_k2JcEE3_maNjnVBKU2s1JjhaZ4rxwgaME&index=2",
+      resource: ColdPlay,
+      alt: "ColdPlay",
+      text: "ColdPlay",
+      href: "https://www.youtube.com/watch?v=yKNxeF4KMsY&list=RDyKNxeF4KMsY&start_radio=1",
     },
     {
-      resource: darkSide,
-      alt: "Dark Side of the Moon - Pink Floyd",
-      text: "Dark Side of the Moon - Pink Floyd",
-      href: "https://www.youtube.com/watch?v=k9ynZnEBtvw",
+      resource: Ntvg,
+      alt: "No te va Gustar",
+      text: "No te va Gustar",
+      href: "https://www.youtube.com/watch?v=GBsRPUxMkkw&list=RDGBsRPUxMkkw&start_radio=1",
     },
     {
-      resource: blackAlbum,
-      alt: "The Black Album - Metallica",
-      text: "The Black Album - Metallica",
-      href: "https://www.youtube.com/watch?v=CHIWNDAwTqQ&list=OLAK5uy_l3qf_fJNreo3L6_ZPIaLOquqfTda--gZc&index=2",
+      resource: GustavoCerati,
+      alt: "Gustavo Cerati",
+      text: "Gustavo Cerati",
+      href: "https://www.youtube.com/watch?v=eAO7CEcCD3s&list=RDeAO7CEcCD3s&start_radio=1",
     },
   ];
+
+  const lugaresfav = lugares.filter(l => [9, 10, 12].includes(l.id));
+  
 
   return (
     <>
@@ -84,9 +90,9 @@ export default function Carina() {
       />
 
       <Section title="Habilidades" cards={habilidades} />
-      <Section title="Películas Favoritas" cards={peliculas} />
-      <Section title="Música Favorita" cards={musica} />
-
+      <Section title="Mis Películas Favoritas" cards={peliculas} />
+      <Section title="Mi Música" cards={musica} />
+      <Carrusel lugares={lugaresfav}/>
       <Footer />
     </>
   );
