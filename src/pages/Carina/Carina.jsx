@@ -3,7 +3,8 @@ import Header from "@/components/Header/Header.jsx";
 import Section from "@/components/Section/Section.jsx";
 import Footer from "@/components/Footer/Footer.jsx";
 import lugares from "@/data/lugares.js";
-import Carrusel from "../../components/carrusel/carrusel";
+import Carrusel from "../../components/Carrusel/Carrusel";
+
 
 
 // 🖼️ Importamos las imágenes de Carina
