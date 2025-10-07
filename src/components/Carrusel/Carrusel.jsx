@@ -11,7 +11,7 @@ export default function Carrusel ({lugares}){
     const anterior = () => setIndex((index-1 + total) % total);
 
     return(
-        <div>
+        <div className="container-carrusel">
             <div style={{ textAlign: "center"}}>
                 <Title title="Lugares que me gustaría conocer" />
             </div>

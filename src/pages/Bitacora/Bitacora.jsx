@@ -4,5 +4,6 @@ export default function Bitacora() {
       <h1>Bitácora</h1>
       <p>Aquí va la bitácora del proyecto.</p>
     </section>
+    
   );
 }
