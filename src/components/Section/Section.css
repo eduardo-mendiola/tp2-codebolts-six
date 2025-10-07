@@ -1,16 +1,13 @@
 .section {
     display: flex;
     flex-direction: column;
-    padding: 2rem 2rem ;
-    /* background: url("../img/eduardo/eduardo_background_03.webp") no-repeat center/cover; */
-    background-position: top center;
-    height: 90vh;
+    padding: 2rem;
     width: var(--section-width);
     gap: var(--gap-card-section);
     position: relative;
     overflow: visible;
+    height: auto; 
 }
-
 .section-title {
     margin-top: 0.8rem;
     font-weight: 500;

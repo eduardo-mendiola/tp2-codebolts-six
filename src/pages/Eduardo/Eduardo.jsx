@@ -91,6 +91,7 @@ const Eduardo = () => {
         name="Eduardo"
         lastName="Mendiola"
         age="44"
+        ageText="años"
         city="Mar del Plata"
         backgroundImage={eduardoHeader}
       />

@@ -1,7 +1,7 @@
 import React from 'react';
 import '@/components/Header/Header.css';
 
-const Header = ({ name, lastName, city, age, backgroundImage, textColor }) => {
+const Header = ({ name, lastName, city, age, ageText, backgroundImage, textColor, shadowColor }) => {
   const headerStyle = {
     background: `url(${backgroundImage}) no-repeat center top`,
     backgroundSize: 'cover',
@@ -13,6 +13,7 @@ const Header = ({ name, lastName, city, age, backgroundImage, textColor }) => {
 
   const textStyle = {
     color: textColor || 'var(--color-white-yellow)', // valor por defecto
+    textShadow: shadowColor || '2px 2px 4px rgba(0, 0, 0, 0.5)',
   };
 
   return (
@@ -28,7 +29,7 @@ const Header = ({ name, lastName, city, age, backgroundImage, textColor }) => {
         </div>
         <p style={textStyle} className="age_number">
           {age}
-          <span style={textStyle} className="age_years">años</span>
+          <span style={textStyle} className="age_years">{ageText}</span>
         </p>
       </div>
     </header>

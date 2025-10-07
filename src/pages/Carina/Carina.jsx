@@ -94,6 +94,7 @@ export default function Carina() {
         name="Carina"
         lastName="Rodrigues"
         age="36"
+        ageText="años"
         city="La Plata"
         backgroundImage={carinaHeader}
         textColor="var(--color-rojo)"
