@@ -1,3 +1,8 @@
+.container-carrusel {
+  padding: 20px;
+  margin-top: 10rem;
+}
+
 .carrusel {
   display: flex;
   position: relative;

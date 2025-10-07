@@ -1,6 +1,10 @@
 import Header from '@/components/Header/Header';
 import Section from '@/components/Section/Section';
 import Footer from '@/components/Footer/Footer';
+import Card from '@/components/Card/Card.jsx';
+import FlippingCard from '@/components/FlippingCard/FlippingCard';
+import lugares from '@/data/lugares.js';
+import Carrusel from '@/components/Carrusel/Carrusel.jsx';
 
 // || Imagenes importadas ||
 import eduardoHeader from '@/assets/eduardo/eduardo_header.webp';
@@ -71,6 +75,16 @@ const Eduardo = () => {
     },
   ];
 
+  // Simpsons Cards
+  const simpsonsCards = [
+    { characterId: 1 },
+    { characterId: 3 },
+    { characterId: 16 },
+  ];
+
+  // Filtrar lugares favoritos por ID
+  const lugaresfav = lugares.filter(l => [9, 10, 12].includes(l.id));
+
   return (
     <>
       <Header
@@ -80,9 +94,11 @@ const Eduardo = () => {
         city="Mar del Plata"
         backgroundImage={eduardoHeader}
       />
-      <Section title="Habilidades" cards={habilidades} />
-      <Section title="Películas Favoritas" cards={peliculas} />
-      <Section title="Música Favorita" cards={musica} />
+      <Section title="Habilidades" cards={habilidades} CardComponent={Card} />
+      <Section title="Películas Favoritas" cards={peliculas} CardComponent={Card} />
+      <Section title="Música Favorita" cards={musica} CardComponent={Card} />
+      <Section title="Personajes Favoritos de Los Simpsons" cards={simpsonsCards} CardComponent={FlippingCard} />
+      <Carrusel lugares={lugaresfav}/>
       <Footer />
     </>
   );

@@ -2,6 +2,8 @@ import React from "react";
 import Header from "@/components/Header/Header.jsx";
 import Section from "@/components/Section/Section.jsx";
 import Footer from "@/components/Footer/Footer.jsx";
+import Card from '@/components/Card/Card.jsx';
+import FlippingCard from '@/components/FlippingCard/FlippingCard';
 import lugares from "@/data/lugares.js";
 import Carrusel from "../../components/Carrusel/Carrusel";
 
@@ -76,8 +78,15 @@ export default function Carina() {
     },
   ];
 
+  // Simpsons Cards
+  const simpsonsCards = [
+    { characterId: 1 },
+    { characterId: 3 },
+    { characterId: 16 },
+  ];
+
   const lugaresfav = lugares.filter(l => [9, 10, 12].includes(l.id));
-  
+
 
   return (
     <>
@@ -90,10 +99,11 @@ export default function Carina() {
         textColor="var(--color-rojo)"
       />
 
-      <Section title="Habilidades" cards={habilidades} />
-      <Section title="Mis Películas Favoritas" cards={peliculas} />
-      <Section title="Mi Música" cards={musica} />
-      <Carrusel lugares={lugaresfav}/>
+      <Section title="Habilidades" cards={habilidades} CardComponent={Card} />
+      <Section title="Películas Favoritas" cards={peliculas} CardComponent={Card} />
+      <Section title="Música Favorita" cards={musica} CardComponent={Card} />
+      <Section title="Personajes Favoritos de Los Simpsons" cards={simpsonsCards} CardComponent={FlippingCard} />
+      <Carrusel lugares={lugaresfav} />
       <Footer />
     </>
   );
