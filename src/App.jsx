@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollToTop from '@/components/ScrollToTop/ScrollToTop';
 import './App.css';
 import Sidebar from '@/components/Sidebar/Sidebar';
 import Inicio from '@/pages/Inicio/Inicio';
@@ -8,23 +9,23 @@ import Bitacora from '@/pages/Bitacora/Bitacora';
 import '@/styles/_reset.css';
 
 function App() {
-  const [page, setPage] = useState('Inicio'); 
-  let Content;
-  if (page === 'Inicio') Content = <Inicio />;
-  else if (page === 'Carina') Content = <Carina />;
-  else if (page === 'Eduardo') Content = <Eduardo />;
-  else if (page === 'Bitacora') Content = <Bitacora />;
-  else Content = <h2>Página no encontrada</h2>;
-    
   return (
-    <div className="app-container">
-      <Sidebar setPage={setPage} />
-      <main className="main-content">
-        {Content}
-      </main>
-    </div>
+    <Router>
+      <ScrollToTop />
+      <div className="app-container">
+        <Sidebar />
+        <main id="main-content" className="main-content">
+          <Routes>
+            <Route path="/" element={<Inicio />} />
+            <Route path="/carina" element={<Carina />} />
+            <Route path="/eduardo" element={<Eduardo />} />
+            <Route path="/bitacora" element={<Bitacora />} />
+            <Route path="*" element={<h2>Página no encontrada</h2>} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
-
 
 export default App;
