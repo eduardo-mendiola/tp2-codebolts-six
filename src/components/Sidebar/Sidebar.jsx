@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // 🔹 Importamos Link para navegación
-import logo from '@/assets/logo.png';
+import logo from '/public/logo.png';
 import '@/components/Sidebar/Sidebar.css';
 import DropDownMenu from '@/components/DropDownMenu/DropDownMenu';
 

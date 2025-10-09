@@ -5,7 +5,7 @@ import Footer from "@/components/Footer/Footer.jsx";
 import Card from '@/components/Card/Card.jsx';
 import FlippingCard from '@/components/FlippingCard/FlippingCard';
 import lugares from "@/data/lugares.js";
-import Carrusel from "../../components/Carrusel/Carrusel";
+import Carrusel from '@/components/Carrusel/Carrusel.jsx';
 
 
 
