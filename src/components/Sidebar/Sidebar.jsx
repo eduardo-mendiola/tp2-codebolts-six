@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // 🔹 Importamos Link para navegación
-import logo from '/public/logo.png';
 import '@/components/Sidebar/Sidebar.css';
 import DropDownMenu from '@/components/DropDownMenu/DropDownMenu';
 
@@ -10,7 +9,7 @@ export default function Sidebar() {
   return (
     <aside className="sidebar">
       <div className="logo-container">
-        <img src={logo} alt="Logo" className="logo" />
+        <img src="/logo.png" alt="Logo" className="logo" />
       </div>
 
       <nav className="nav-links">
