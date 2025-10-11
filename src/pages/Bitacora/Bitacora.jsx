@@ -1,6 +1,69 @@
+import { useTheme } from '@/context/ThemeContext';
 import "@/pages/Bitacora/Bitacora.css";
 
 export default function Bitacora() {
+  const { isDarkMode } = useTheme();
+
+  // 🔹 Estilos dinámicos según el modo
+  const containerStyle = {
+    backgroundColor: isDarkMode ? 'var(--color-background-body-dark)' : '#fff', // gris oscuro / gris claro
+    color: isDarkMode ? '#f1f1f1' : '#272727',
+    transition: 'all 0.3s ease',
+    padding: '2rem',
+    maxWidth: '900px',
+    margin: '2rem auto',
+    lineHeight: 1.6,
+  };
+
+  const headingStyle = {
+    color: isDarkMode ? '#a2d5f2' : '#1a1a1a',
+    borderBottom: isDarkMode ? '2px solid #555' : '2px solid #ddd',
+    transition: 'all 0.3s ease',
+    margin: '2rem 0 1rem',
+    paddingBottom: '2rem',
+    textAlign: 'center',
+    fontSize: '3rem'
+  };
+
+  const sectionHeadingStyle = {
+    color: isDarkMode ? '#a2d5f2' : '#1a1a1a',
+    borderBottom: isDarkMode ? '2px solid #555' : '2px solid #ddd',
+    paddingBottom: '0.3rem',
+    fontSize: '1.8rem',
+    margin: '2rem 0 1rem'
+  };
+
+  const subHeadingStyle = {
+    color: isDarkMode ? '#cfcfcf' : '#444',
+    fontSize: '1.4rem',
+    margin: '1.5rem 0 0.5rem'
+  };
+
+  const paragraphStyle = {
+    color: isDarkMode ? '#e0e0e0' : '#000000',
+    marginBottom: '2rem'
+  };
+
+  const linkStyle = {
+    color: isDarkMode ? '#4ec9b0' : '#1e90ff',
+    textDecoration: 'none'
+  };
+
+  const treeStyle = {
+    backgroundColor: isDarkMode ? '#2e2e2e' : '#fff',
+    color: isDarkMode ? '#d4d4d4' : '#4c4c4c',
+    border: isDarkMode ? '1px solid rgba(255, 255, 255, 0.1)' : '1px solid rgba(0, 0, 0, 0.06)',
+    padding: '1.5rem',
+    borderRadius: '8px',
+    overflowX: 'auto',
+    whiteSpace: 'pre',
+    lineHeight: '1.4',
+    display: 'inline-block',
+    textAlign: 'left',
+    maxWidth: '100%',
+    boxSizing: 'border-box'
+  };
+
   const treeLines = [
     "📁 project-root/",
     "│",
@@ -71,13 +134,14 @@ export default function Bitacora() {
   const tree = treeLines.join("\n");
 
   return (
-    <div className="bitacora-container" translate="no">
-      <h1>Bitácora</h1>
-      <p>
+    <div className="bitacora-container" style={containerStyle} translate="no">
+      <h1 style={headingStyle}>Bitácora</h1>
+      <p style={paragraphStyle}>
         Esta sección contiene una descripción del proceso de desarrollo del proyecto,
         incluyendo: decisiones de diseño tomadas por el equipo, dificultades encontradas y cómo se resolvieron y cambios importantes realizados durante la implementación.
       </p>
-      <p>
+
+      <p style={paragraphStyle}>
         La bitácora está pensada para registrar el proceso de trabajo y debe ampliarse en el TP2, y
         TP3, incorporando reflexiones sobre la evolución del proyecto.
       </p>
@@ -90,10 +154,9 @@ export default function Bitacora() {
         <li>25/09/25: Mejoras y correcciones generales.</li>
       </ol>
 
-
       <section>
-        <h2>Decisiones de Diseño</h2>
-        <p>
+        <h2 style={sectionHeadingStyle}>Decisiones de Diseño</h2>
+        <p style={paragraphStyle}>
           El equipo decidió utilizar una paleta de colores basada en tonos azules y grises para transmitir
           profesionalismo y modernidad. Además, se seleccionó la tipografía 'Roboto' por su legibilidad y estilo
           contemporáneo. Se optó por un diseño responsive para garantizar una experiencia óptima en dispositivos
@@ -102,8 +165,8 @@ export default function Bitacora() {
       </section>
 
       <section>
-        <h2>Dificultades Encontradas</h2>
-        <p>
+        <h2 style={sectionHeadingStyle}>Dificultades Encontradas</h2>
+        <p style={paragraphStyle}>
           Durante el desarrollo, enfrentamos problemas con la implementación de animaciones en la portada, lo que
           requirió investigar y aplicar técnicas de CSS avanzadas. También hubo desafíos al ajustar el diseño para
           pantallas pequeñas, especialmente en la navegación, que se resolvieron utilizando media queries y
@@ -112,8 +175,8 @@ export default function Bitacora() {
       </section>
 
       <section>
-        <h2>Cambios Importantes</h2>
-        <p>
+        <h2 style={sectionHeadingStyle}>Cambios Importantes</h2>
+        <p style={paragraphStyle}>
           Inicialmente, se planeó un diseño estático, luego se incorporo interactividad mediante JavaScript
           para mejorar la experiencia del usuario. Además, se reorganizó la estructura de carpetas del proyecto
           para facilitar el mantenimiento y la colaboración entre los integrantes del equipo.
@@ -121,9 +184,10 @@ export default function Bitacora() {
       </section>
 
       <section>
-        <h2>Análisis Completo del Sistema</h2>
-        <h3>Archivos HTML</h3>
-        <p>El sistema incluye varias páginas HTML que representan diferentes secciones del sitio web:
+        <h2 style={sectionHeadingStyle}>Análisis Completo del Sistema</h2>
+        <h3 style={subHeadingStyle}>Archivos HTML</h3>
+        <p style={paragraphStyle}>
+          El sistema incluye varias páginas HTML que representan diferentes secciones del sitio web:
           <ul>
             <li><strong>index.html:</strong> Página principal con información sobre el equipo y un diseño
               responsivo.</li>
@@ -135,9 +199,11 @@ export default function Bitacora() {
             </li>
           </ul>
         </p>
+      </section>
 
-        <h3>Archivos CSS</h3>
-        <p>El diseño visual se gestiona mediante varios archivos CSS:
+      <section>
+        <h3 style={subHeadingStyle}>Archivos CSS</h3>
+        <p style={paragraphStyle}>El diseño visual se gestiona mediante varios archivos CSS:
           <ul>
             <li><strong>_reset_edu.css:</strong> Archivo de reinicio para garantizar consistencia entre navegadores.
             </li>
@@ -150,8 +216,8 @@ export default function Bitacora() {
           </ul>
         </p>
 
-        <h3>Archivos JavaScript</h3>
-        <p>La interactividad del sitio se implementa con varios scripts:
+        <h3 style={subHeadingStyle}>Archivos JavaScript</h3>
+        <p style={paragraphStyle}>La interactividad del sitio se implementa con varios scripts:
           <ul>
             <li><strong>main.js:</strong> Gestiona el modo oscuro, menús desplegables y popups interactivos.</li>
             <li><strong>scripts_eduardo.js:</strong> Añade efectos de paralaje y animaciones específicas para la
@@ -164,11 +230,11 @@ export default function Bitacora() {
         </p>
       </section>
 
-      <h2>Árbol de archivos</h2>
-      <p>
+      <h2 style={sectionHeadingStyle}>Árbol de archivos</h2>
+      <p style={paragraphStyle}>
         Estructura del proyecto que muestra la organización de carpetas, componentes, estilos y archivos de configuración utilizados en la aplicación.
       </p>
-      <pre className="file-tree">{tree}</pre>
+      <pre className="file-tree" style={treeStyle}>{tree}</pre>
     </div>
   );
 }

@@ -1,6 +1,5 @@
 
 /* || SECTIONS / CARDS */
-
 .card {
     --padding: 0.8rem;
     background-color: var(--color-background-section);
@@ -12,6 +11,16 @@
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.card a {
+  text-decoration: none; /* quita subrayado */
+  color: inherit;        /* mantiene color del card */
+}
+
+.card a:hover {
+  text-decoration: none; /* opcional: que no aparezca al hover */
+}
+
 
 .card:hover {
     transform: translateY(-10px);

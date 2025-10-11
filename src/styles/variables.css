@@ -8,6 +8,7 @@
     --color-fondo-claro: #d9d9d9;
     /* Fondo de secciones suaves o tarjetas */
     --color-encabezado: #284b63;
+    --color-encabezado-dark: #31434f;
     /* Encabezados, barra de navegación, etc. */
     --color-underline: #5da1a5;
     /*para subrayados */
@@ -20,6 +21,7 @@
     --color-primary-text: #222;
     --color-secondary-text: #7f8c8d;
     --color-background-body: #C4CFCC;
+    --color-background-body-dark: #2a2a2a;
     --color-background-section: white;
     --color-background-navbar: rgba(40, 75, 99, 0.5);
     --color-background-navbar-solid: rgb(40, 75, 99);
@@ -33,6 +35,8 @@
     --backgraund-color-black: #1e1e1e;
     --color-rojo: #bd165e;
     --color-fondo-inicio: #cbd2da;
+    --sidebar-bg: #a3bfa0; 
+    --sidebar-bg-dark: #3b4a36;
 
     /* || VARIABLE DE FONTS */
     --font-primary: 'Open Sans', sans-serif;

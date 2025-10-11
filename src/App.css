@@ -24,3 +24,16 @@
 .nav-links > :last-child {
   margin: auto 0 20px 0; 
 } 
+
+/* Fondo para modo claro */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Fondo para modo oscuro */
+body.dark-mode {
+  background-color: var(--color-background-body-dark);
+  color: #f1f1f1;
+}
