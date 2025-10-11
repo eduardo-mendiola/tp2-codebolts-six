@@ -34,8 +34,8 @@ export default function Sidebar() {
 
         {showMenu && <DropDownMenu />} 
 
-        <Link className="nav-link" to="/componentes">Componentes</Link>
-        <Link className="nav-link" to="/carpetas">Carpetas</Link>
+        {/* <Link className="nav-link" to="/componentes">Componentes</Link> */}
+        {/* <Link className="nav-link" to="/carpetas">Carpetas</Link> */}
         <Link className="nav-link" to="/bitacora">Bitácora</Link>
         <DarkModeButton />
       </nav>
