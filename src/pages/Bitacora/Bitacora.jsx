@@ -71,10 +71,10 @@ export default function Bitacora() {
   const tree = treeLines.join("\n");
 
   return (
-    <div className="bitacora-container">
+    <div className="bitacora-container" translate="no">
       <h1>Bitácora</h1>
       <p>
-        Esta sección conteniene una descripción del proceso de desarrollo del proyecto,
+        Esta sección contiene una descripción del proceso de desarrollo del proyecto,
         incluyendo: decisiones de diseño tomadas por el equipo, dificultades encontradas y cómo se resolvieron y cambios importantes realizados durante la implementación.
       </p>
       <p>

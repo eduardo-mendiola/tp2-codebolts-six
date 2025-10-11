@@ -14,9 +14,6 @@
 |---------------------|-----------------------|
 | Rodrigues, Carina   | [crc.html](juan.html) |
 | Mendiola, Eduardo E.| [eduardo.html](maria.html) |
-| Integrante 3        | [integrante3.html](int4.html) |
-| Integrante 4        | [integrante4.html](int4.html) |
-| Integrante 5        | [integrante5.html](int5.html) |
 
 
 **Fecha de inicio:** 23-09-2025  
