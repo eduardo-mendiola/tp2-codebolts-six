@@ -1,15 +1,24 @@
 import React from 'react';
+import { useTheme } from '@/context/ThemeContext';
 import '@/components/Header/Header.css';
 
-const Header = ({ name, lastName, city, age, ageText, backgroundImage, textColor, shadowColor }) => {
+
+const Header = ({ name, lastName, city, age, ageText, backgroundImage, backgroundImageDark, textColor, shadowColor }) => {
+
+  const { isDarkMode } = useTheme();
+  console.log("Header - isDarkMode:", isDarkMode);
+
   const headerStyle = {
-    background: `url(${backgroundImage}) no-repeat center top`,
+    backgroundImage: `url(${isDarkMode ? backgroundImageDark : backgroundImage})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center top',
     backgroundSize: 'cover',
     width: 'calc(100vw - var(--sidebar-width))',
     height: '100vh',
     position: 'relative',
     gridArea: 'header',
   };
+
 
   const textStyle = {
     color: textColor || 'var(--color-white-yellow)', // valor por defecto

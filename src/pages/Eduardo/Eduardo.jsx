@@ -8,6 +8,7 @@ import Carrusel from '@/components/Carrusel/Carrusel.jsx';
 
 // || Imagenes importadas ||
 import eduardoHeader from '@/assets/eduardo/eduardo_header.webp';
+import eduardoHeaderDark from '@/assets/eduardo/eduardo_header-dark.webp';
 
 // Habilidades
 import construyendo from '@/assets/eduardo/construyendo.webp';
@@ -94,6 +95,7 @@ const Eduardo = () => {
         ageText="años"
         city="Mar del Plata"
         backgroundImage={eduardoHeader}
+        backgroundImageDark={eduardoHeaderDark}
       />
       <Section title="Habilidades" cards={habilidades} CardComponent={Card} />
       <Section title="Películas Favoritas" cards={peliculas} CardComponent={Card} />
