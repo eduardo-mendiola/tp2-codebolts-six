@@ -7,7 +7,7 @@ export default function Footer() {
 
   const footerStyle = {
     backgroundColor: isDarkMode ? 'var(--color-encabezado-dark)' : 'var(--color-encabezado)',
-    color: isDarkMode ? '#f1f1f1' : '#000000',       
+    color: isDarkMode ? '#c2c2c2ff' : '#fff',       
     padding: '1rem',
     textAlign: 'center',
     transition: 'background-color 0.3s ease, color 0.3s ease'
