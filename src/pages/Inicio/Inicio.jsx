@@ -5,22 +5,63 @@ import inicioHeaderDark from '@/assets/inicio/inicio_header-dark.webp';
 import Section from '@/components/Section/Section';
 import Card from '@/components/Card/Card.jsx';
 import Footer from '@/components/Footer/Footer';
+import { href } from "react-router-dom";
 
 export default function Inicio() {
   const { isDarkMode } = useTheme(); 
 
   const stack = [
-    { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", alt: "HTML5", text: "HTML5" },
-    { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", alt: "CSS3", text: "CSS3" },
-    { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", alt: "JavaScript", text: "JavaScript" },
-    { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", alt: "React", text: "React" }
+    { 
+      resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", 
+      alt: "HTML5", 
+      text: "HTML5",
+      href: "https://developer.mozilla.org/en-US/docs/Web/HTML" 
+    },
+    { 
+      resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", 
+      alt: "CSS3", 
+      text: "CSS3",
+      href: "https://developer.mozilla.org/en-US/docs/Web/CSS" 
+    },
+    { 
+      resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", 
+      alt: "JavaScript", 
+      text: "JavaScript",
+      href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" 
+    },
+    { 
+      resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", 
+      alt: "React", 
+      text: "React",
+      href: "https://react.dev/"
+     }
   ];
 
   const tools = [
-    { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", alt: "Git", text: "Git" },
-    { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", alt: "GitHub", text: "GitHub" },
-    { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", alt: "VSCode", text: "Visual Studio Code" },
-    { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg", alt: "Vercel", text: "Vercel" }
+    { 
+      resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", 
+      alt: "Git", 
+      text: "Git",
+      href: "https://git-scm.com/" 
+    },
+    { 
+      resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", 
+      alt: "GitHub", 
+      text: "GitHub",
+      href: "https://github.com/"
+    },
+    { 
+      resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", 
+      alt: "VSCode", 
+      text: "Visual Studio Code",
+      href: "https://code.visualstudio.com/"
+     },
+    { 
+      resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg", 
+      alt: "Vercel", 
+      text: "Vercel",
+      href: "https://vercel.com/"
+     }
   ];
 
   // 🔹 Variables de estilo
