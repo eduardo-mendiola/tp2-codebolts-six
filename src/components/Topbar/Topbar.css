@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 
-.dropdown-menu {
+.dropdown-menu-top {
   position: absolute;
   top: 100%;
   right: 0;
@@ -39,16 +39,15 @@
   min-width: 160px;
   background-color: var(--color-encabezado);
   text-align: center;
-  padding: 10px;
   border-radius: 0 0 0 25px;
 }
 
-.dropdown-menu a {
+.dropdown-menu-top a {
   padding: 10px;
   text-decoration: none;
   color: var(--color-fondo);
 }
 
-.dropdown-menu a:hover {
+.dropdown-menu-top a:hover {
   color: var(--color-secundario);
 }

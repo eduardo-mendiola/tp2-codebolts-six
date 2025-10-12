@@ -23,7 +23,7 @@ export default function Topbar(){
         </button>
       </div>
         {menuOpen && (
-            <nav className="dropdown-menu">
+            <nav className="dropdown-menu-top">
             <Link to="/" onClick={() => setMenuOpen(false)}>Inicio</Link>
             <Link to="/carina" onClick={() => setMenuOpen(false)}>Carina</Link>
             <Link to="/eduardo" onClick={() => setMenuOpen(false)}>Eduardo</Link>

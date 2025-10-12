@@ -25,16 +25,18 @@ export default function Sidebar() {
       <nav className="nav-links">
         <Link className="nav-link" to="/">Inicio</Link>
 
-        <button
-          className="nav-link"
-          onClick={() => setShowMenu(!showMenu)}
-          style={sidebarStyle}
-        >
-          Integrantes
-        </button>
+        <div className="menu-wrapper">
 
-        {showMenu && <DropDownMenu />} 
+          <button
+            className="nav-link"
+            onClick={() => setShowMenu(!showMenu)}
+            style={sidebarStyle}
+          >
+            Integrantes
+          </button>
 
+          {showMenu && <DropDownMenu />} 
+      </div>
         {/* <Link className="nav-link" to="/componentes">Componentes</Link> */}
         {/* <Link className="nav-link" to="/carpetas">Carpetas</Link> */}
         <Link className="nav-link" to="/bitacora">Bitácora</Link>
