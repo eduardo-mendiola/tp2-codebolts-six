@@ -11,6 +11,7 @@ import Carrusel from '@/components/Carrusel/Carrusel.jsx';
 
 // 🖼️ Importamos las imágenes de Carina
 import carinaHeader from "@/assets/carina/carina_header.webp";
+import carinaHeaderDark from "@/assets/carina/carina_header-dark.webp";
 
 // Habilidades (pueden ser distintas, pero de momento usaremos las de ejemplo)
 import SkillOne from "@/assets/carina/SkillOne.png";
@@ -97,6 +98,7 @@ export default function Carina() {
         ageText="años"
         city="La Plata"
         backgroundImage={carinaHeader}
+        backgroundImageDark={carinaHeaderDark}
         textColor="var(--color-rojo)"
       />
 

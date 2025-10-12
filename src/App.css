@@ -13,11 +13,27 @@
   overflow-x: hidden;
 }
 
-/* .main-content {
-  margin-left: 200px; 
-  padding: 20px;
-  flex: 1;
-  height: 100vh;
-  overflow-y: auto; 
-} */
+/* Make the navigation fill the space */
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* fills the available height */
+}
 
+/* Push the DarkModeButton to the bottom */
+.nav-links > :last-child {
+  margin: auto 0 20px 0; 
+} 
+
+/* Fondo para modo claro */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Fondo para modo oscuro */
+body.dark-mode {
+  background-color: var(--color-background-body-dark);
+  color: #f1f1f1;
+}
