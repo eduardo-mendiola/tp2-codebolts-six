@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "titulo": "Cataratas del Iguazú",
+    "subtitulo": "Misiones",
+    "img": "iguazu.jpg"
+  },
+  {
+    "id": 2,
+    "titulo": "Mar del Plata",
+    "subtitulo": "Buenos Aires",
+    "img": "mardelplata.jpg"
+  },
+  {
+    "id": 3,
+    "titulo": "Sierra de la Ventana",
+    "subtitulo": "Buenos Aires",
+    "img": "sierradelaventana.webp"
+  },
+  {
+    "id": 4,
+    "titulo": "Tandil",
+    "subtitulo": "Buenos Aires",
+    "img": "tandil.jpg"
+  },
+  {
+    "id": 5,
+    "titulo": "Mina Clavero",
+    "subtitulo": "Córdoba",
+    "img": "minaclavero.jpg"
+  },
+  {
+    "id": 6,
+    "titulo": "Villa Carlos Paz",
+    "subtitulo": "Córdoba",
+    "img": "carlospaz.jpg"
+  },
+  {
+    "id": 7,
+    "titulo": "San Carlos de Bariloche",
+    "subtitulo": "Río Negro",
+    "img": "bariloche.jpg"
+  },
+  {
+    "id": 8,
+    "titulo": "Esquel",
+    "subtitulo": "Chubut",
+    "img": "esquel.webp"
+  },
+  {
+    "id": 9,
+    "titulo": "Trevelin",
+    "subtitulo": "Río Negro",
+    "img": "trevelin.jpg"
+  },
+  {
+    "id": 10,
+    "titulo": "Ushuaia",
+    "subtitulo": "Tierra del Fuego",
+    "img": "ushuaia.webp"
+  },
+  {
+    "id": 11,
+    "titulo": "Santa Teresita",
+    "subtitulo": "Buenos Aires",
+    "img": "stateresita.jpg"
+  },
+  {
+    "id": 12,
+    "titulo": "El Bolsón",
+    "subtitulo": "Río Negro",
+    "img": "bolson.webp"
+  },
+  {
+    "id": 13,
+    "titulo": "Miramar",
+    "subtitulo": "Buenos Aires",
+    "img": "miramar.jpg"
+  },
+  {
+    "id": 14,
+    "titulo": "Lobos",
+    "subtitulo": "Buenos Aires",
+    "img": "lobos.jpg"
+  },
+  {
+    "id": 15,
+    "titulo": "San Rafael",
+    "subtitulo": "Mendoza",
+    "img": "sanrafael.jpg"
+  },
+  {
+    "id": 16,
+    "titulo": "Perito Moreno",
+    "subtitulo": "Santa Cruz",
+    "img": "peritomoreno.webp"
+  },
+  {
+    "id": 17,
+    "titulo": "El Chaltén",
+    "subtitulo": "Santa Cruz",
+    "img": "chalten.webp"
+  }
+]
