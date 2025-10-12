@@ -5,6 +5,7 @@ import '@/components/Sidebar/Sidebar.css';
 import DropDownMenu from '@/components/DropDownMenu/DropDownMenu';
 import DarkModeButton from '../DarkModeButton/DarkModeButton';
 
+
 export default function Sidebar() {
   const [showMenu, setShowMenu] = useState(false);
   const { isDarkMode } = useTheme();

@@ -63,5 +63,13 @@
   right: 10px;
 }
 
+@media (max-width: 900px) and (min-width: 401px) {
 
+  .carrusel{
+    max-width: 250px;
+  }
+  .carrusel-imagenes{
+    max-height: 300px;
+  }
+}
 
