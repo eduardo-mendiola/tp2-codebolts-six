@@ -4,9 +4,7 @@ import Section from "@/components/Section/Section.jsx";
 import Footer from "@/components/Footer/Footer.jsx";
 import Card from '@/components/Card/Card.jsx';
 import FlippingCard from '@/components/FlippingCard/FlippingCard';
-import lugares from "@/data/lugares.js";
-import Carrusel from '@/components/Carrusel/Carrusel.jsx';
-
+import Carrusel from "@/components/Carrusel/Carrusel.jsx";
 
 
 // 🖼️ Importamos las imágenes de Carina
@@ -86,8 +84,14 @@ export default function Carina() {
     { characterId: 1 },
   ];
 
-  const lugaresfav = lugares.filter(l => [9, 10, 12].includes(l.id));
 
+  const conocidos = [2, 5, 7];
+  const meGustaria = [9, 10, 12];
+  const verbos = {
+    pasado: "Conocí",
+    presente: "No conozco",
+    futuro: "Me gustaría conocer",
+  };
 
   return (
     <>
@@ -106,7 +110,14 @@ export default function Carina() {
       <Section title="Películas Favoritas" cards={peliculas} CardComponent={Card} />
       <Section title="Música Favorita" cards={musica} CardComponent={Card} />
       <Section title="Personajes Favoritos de Los Simpsons" cards={simpsonsCards} CardComponent={FlippingCard} />
-      <Carrusel lugares={lugaresfav} />
+      <Carrusel
+        folder="lugares"
+        dataPath="/data/lugares.json"
+        title="Lugares"
+        conocidos={conocidos}
+        meGustaria={meGustaria}
+        verbos={verbos}
+      />
       <Footer />
     </>
   );

@@ -3,7 +3,6 @@ import Section from '@/components/Section/Section';
 import Footer from '@/components/Footer/Footer';
 import Card from '@/components/Card/Card.jsx';
 import FlippingCard from '@/components/FlippingCard/FlippingCard';
-import lugares from '@/data/lugares.js';
 import Carrusel from '@/components/Carrusel/Carrusel.jsx';
 
 // || Imagenes importadas ||
@@ -83,8 +82,14 @@ const Eduardo = () => {
     { characterId: 16 },
   ];
 
-  // Filtrar lugares favoritos por ID
-  const lugaresfav = lugares.filter(l => [9, 10, 12].includes(l.id));
+  const conocidos = [3, 8, 15];
+  const meGustaria = [1, 6, 8, 12, 17];
+  const verbos = {
+    pasado: "Conocí",
+    presente: "No conozco",
+    futuro: "Me gustaría conocer",
+  };
+
 
   return (
     <>
@@ -101,7 +106,14 @@ const Eduardo = () => {
       <Section title="Películas Favoritas" cards={peliculas} CardComponent={Card} />
       <Section title="Música Favorita" cards={musica} CardComponent={Card} />
       <Section title="Personajes Favoritos de Los Simpsons" cards={simpsonsCards} CardComponent={FlippingCard} />
-      <Carrusel lugares={lugaresfav}/>
+      <Carrusel
+        folder="lugares"
+        dataPath="/data/lugares.json"
+        title="Lugares"
+        conocidos={conocidos}
+        meGustaria={meGustaria}
+        verbos={verbos}
+      />
       <Footer />
     </>
   );
