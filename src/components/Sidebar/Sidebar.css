@@ -1,3 +1,16 @@
+.menu-toggle {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--color-encabezado);
+  cursor: pointer;
+  z-index: 1001;
+}
+
 .sidebar {
   width: var(--sidebar-width);
   height: 100vh;
@@ -40,6 +53,29 @@
 
 .nav-links button:hover {
   color: var(--color-secundario);
+}
+
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: block;
+  }
+  .logo-container{
+    margin-top: 60px;
+  }
+
+ .sidebar {
+  width: 250px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%); /* oculta en mobile */
+  z-index: 1000;
+}
+  .sidebar.open {
+  transform: translateX(0);
+}
 }
 
 

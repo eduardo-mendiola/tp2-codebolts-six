@@ -1,10 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from '@/context/ThemeContext';
+import { useState } from "react";
 import ScrollToTop from '@/components/ScrollToTop/ScrollToTop';
 import './App.css';
 import Sidebar from '@/components/Sidebar/Sidebar';
-import Topbar from '@/components/Topbar/Topbar';
-import { useWindowWidth } from '@/hooks/useWindowWidth';
 import Inicio from '@/pages/Inicio/Inicio';
 import Eduardo from '@/pages/Eduardo/Eduardo';
 import Carina from '@/pages/Carina/Carina';
@@ -14,13 +13,13 @@ import Bitacora from '@/pages/Bitacora/Bitacora';
 import '@/styles/_reset.css';
 
 function App() {
-  const width = useWindowWidth();
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   return (
     <Router>
       <ThemeProvider>
         <ScrollToTop />
-        <div className="app-container">
-          {width > 900 ? <Sidebar /> : <Topbar />}
+        <div className={`app-container ${isSidebarOpen ? 'sidebar-open' : ''}`}>
+          <Sidebar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
           <main id="main-content" className="main-content">
             <Routes>
               <Route path="/" element={<Inicio />} />

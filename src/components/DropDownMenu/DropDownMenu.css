@@ -1,16 +1,12 @@
-.menu-wrapper {
-  position: relative; 
-}
 .dropdown-menu {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    justify-content: center;
+    gap: 10px;
     align-items: center;
     position: relative;  
     border: none;
-    margin-top: 5px;
 }
+
 .dropdown-item {
     background-color: var(--color-encabezado);
     color: var(--color-fondo);

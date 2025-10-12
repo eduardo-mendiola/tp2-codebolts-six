@@ -37,6 +37,16 @@ body.dark-mode {
   background-color: var(--color-background-body-dark);
   color: #f1f1f1;
 }
+/* Contenedor principal */
+.app-container {
+  display: flex;
+  transition: margin-left 0.3s ease;
+}
+
+/* Cuando la sidebar se abre, desplazamos el contenido */
+.app-container.sidebar-open .main-content {
+  margin-left: 250px; /* igual al ancho de la sidebar */
+}
 
 @media (max-width:400px){
  .main-content{
