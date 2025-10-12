@@ -3,6 +3,8 @@ import { ThemeProvider } from '@/context/ThemeContext';
 import ScrollToTop from '@/components/ScrollToTop/ScrollToTop';
 import './App.css';
 import Sidebar from '@/components/Sidebar/Sidebar';
+import Topbar from '@/components/Topbar/Topbar';
+import { useWindowWidth } from '@/hooks/useWindowWidth';
 import Inicio from '@/pages/Inicio/Inicio';
 import Eduardo from '@/pages/Eduardo/Eduardo';
 import Carina from '@/pages/Carina/Carina';
@@ -12,12 +14,13 @@ import Bitacora from '@/pages/Bitacora/Bitacora';
 import '@/styles/_reset.css';
 
 function App() {
+  const width = useWindowWidth();
   return (
     <Router>
       <ThemeProvider>
         <ScrollToTop />
         <div className="app-container">
-          <Sidebar />
+          {width > 900 ? <Sidebar /> : <Topbar />}
           <main id="main-content" className="main-content">
             <Routes>
               <Route path="/" element={<Inicio />} />

@@ -79,9 +79,9 @@ export default function Carina() {
 
   // Simpsons Cards
   const simpsonsCards = [
+    { characterId: 4 },
+    { characterId: 90 },
     { characterId: 1 },
-    { characterId: 3 },
-    { characterId: 16 },
   ];
 
 
