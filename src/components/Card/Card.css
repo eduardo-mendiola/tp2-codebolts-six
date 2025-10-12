@@ -45,3 +45,26 @@
     transition: transform 0.2s ease;
     transform-style: preserve-3d;
 }
+
+@media (max-width: 400px) {
+ 
+    .card{
+        display: flex;
+        width: 90%;
+    }
+    .card p {
+    font-weight: 300;
+    }
+  
+}
+
+@media (max-width: 900px) and (min-width: 401px) {
+  
+    .card{
+        display: flex;
+        width: calc((100vw - (var(--gap-card-section) * 2)) / 2);
+    }
+    .card p {
+    font-weight: 300;
+    }
+}
