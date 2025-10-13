@@ -103,7 +103,7 @@ export default function Carina() {
         city="La Plata"
         backgroundImage={carinaHeader}
         backgroundImageDark={carinaHeaderDark}
-        textColor="var(--color-rojo)"
+        textColor="var(--color-heading)"
       />
 
       <Section title="Habilidades" cards={habilidades} CardComponent={Card} />

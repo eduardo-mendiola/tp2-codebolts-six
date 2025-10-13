@@ -1,7 +1,7 @@
 header {
     /* background: url("../src/assets/eduardo/eduardo_header.webp") no-repeat center top; */
     background-size: cover;
-    width: var(--section-width);
+    width: calc(100vw - var(--sidebar-width));
     height: 100vh;
     /* overflow-x: hidden; */
     background-position: top center;
@@ -93,4 +93,18 @@ header {
 
 .age_years {
     font-size: 4rem;
+}
+
+@media (max-width: 900px){
+  header{
+    width: 100vw;
+  }
+
+  
+  .age_years , .age_number, .city{
+    font-size: 2rem;
+  }
+  .name, .lastname{
+    font-size: 3rem;
+  }
 }

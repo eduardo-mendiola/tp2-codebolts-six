@@ -229,6 +229,47 @@ export default function Bitacora() {
           </ul>
         </p>
       </section>
+      <section>
+          <h2 style={sectionHeadingStyle}>Configuración inicial y estructura</h2>
+          <p style={paragraphStyle}>Creación del proyecto con React y React Router.
+            Configuración de ThemeContext para manejar modo claro/oscuro.
+            Definición de la estructura principal en App.jsx con:
+            <ul>
+              <li><strong>Sidebar:</strong> Lateral izquierda</li>
+              <li><strong>Navegación con React Router:</strong> Implementación de React Router para manejar las 
+              distintas páginas dentro de 'main'. Con solo un click, cambia la ruta automáticamente y renderiza el componente correspondiente
+              sin recargar la página.</li>
+              <li><strong>Main:</strong> Muestra el contenido dinámico</li>
+              <li><strong>Theme Provider:</strong> Para modo oscuro</li>
+              <li><strong>Scroll To Top:</strong> Para navegación fluida</li>
+              <li>Uso de <strong>useState</strong> para manejar el estado de la sidebar (abierta/cerrada) de forma inicial.</li>
+            </ul>
+          </p>
+          <h2 style={sectionHeadingStyle}>Componentes</h2>
+          <h3 style={subHeadingStyle}>Sidebar y DropDownMenu</h3>
+          <p style={paragraphStyle}>Implementación de Barra lateral fija para escritorio
+            <ul>
+              <li><strong>DropDownMenu:</strong> Menú desplegable para ver los Integrantes del grupo</li>
+              <li><strong>MemberButton:</strong> Creación de Botones para cada integrante con estilo propio</li>
+              <li><strong>Ajuste de estilos:</strong> .sidebar, .nav-links, .nav-link, .menu-wrapper.</li>
+              <li><strong>Mejoras Responsive:</strong> Menú hamburguesa visible en pantallas menores a 900px que despliega
+              u oculta la barra lateral al hacer click</li>
+            </ul>
+          </p>
+          <h3 style={subHeadingStyle}>Footer Y Header</h3>
+          <p style={paragraphStyle}>Se conservaron estos elementos de la primera parte del proyecto ahora convertidos en componentes reutilizables.
+            En el caso del Header se eligió el diseño establecido en Eduardo.html con una imagen de fondo adaptable al modo claro/oscuro. El Footer se mantuvo sin cambios.
+          </p>
+          <h3 style={subHeadingStyle}>Section y otros </h3>
+          <p style={paragraphStyle}> Se dio estructura a las secciones a utilizar en las páginas de integrantes.</p>
+          <ul>
+              <li><strong>Title - Card - Line:</strong> Componentes comunes a varias secciones</li>
+          </ul>
+          <h3 style={subHeadingStyle}>Carrusel</h3>
+          
+      </section>
+
+      
 
       <h2 style={sectionHeadingStyle}>Árbol de archivos</h2>
       <p style={paragraphStyle}>

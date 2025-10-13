@@ -1,8 +1,6 @@
 .sidebar {
   width: var(--sidebar-width);
   height: 100vh;
-  top: 0;
-  left: 0;
   background-color: var(--color-encabezado);
   color: var(--color-fondo);
   display: flex;
@@ -12,8 +10,20 @@
   font-family: var(--fuente-texto);
   gap: 10%;
   overflow-y: auto;
+  transition: transform 0.3s ease;
 }
-
+.menu-toggle {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--color-encabezado);
+  cursor: pointer;
+  z-index: 1001;
+}
 
 .logo {
   margin: 10px;
@@ -40,6 +50,33 @@
 
 .nav-links button:hover {
   color: var(--color-secundario);
+}
+
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: block;
+  }
+  .logo-container{
+    margin-top: 60px;
+  }
+
+ .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-width);
+    height: 100vh;
+    transform: translateX(-100%); /* oculta fuera de la pantalla */
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+  .sidebar.open {
+  transform: translateX(0);
+}
+.app-container.sidebar-open .main-content {
+    transform: translateX(var(--sidebar-width));
+    transition: transform 0.3s ease;
+  }
 }
 
 

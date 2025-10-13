@@ -3,16 +3,19 @@
   grid-template-columns: var(--sidebar-width) calc(100% - var(--sidebar-width)); 
   height: 100vh;
   overflow-x: hidden;
+  transition: transform 0.3s ease; /* para animar cuando se mueva */
+}
+.sidebar {
+  grid-column: 1 / 2;
 }
 
 .main-content {
-  padding: 0; /* padding interno solo */
+  grid-column: 2 / 3;
+  padding: 0;
   height: 100vh;
   overflow-y: auto;
-  width: var(--section-width);
-  overflow-x: hidden;
+  transition: transform 0.3s ease;
 }
-
 /* Make the navigation fill the space */
 .nav-links {
   display: flex;
@@ -36,4 +39,42 @@ body {
 body.dark-mode {
   background-color: var(--color-background-body-dark);
   color: #f1f1f1;
+}
+
+@media (max-width: 900px){
+  .app-container {
+    display: block;
+    position: relative;
+  }
+  .main-content{
+     width: 100vw;
+     transition: transform 0.3s ease;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-width);
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+   .sidebar.open {
+    transform: translateX(0);
+  }
+  .app-container.sidebar-open .main-content {
+     transform: translateX(var(--sidebar-width));
+     transition: transform 0.3s ease;
+  }
+  .main-content{
+    transition: transform 0.3s ease;
+  }
+ .header{
+  width: 50%;
+ }
+  .header-right{
+    position: absolute;
+  }
+  
 }

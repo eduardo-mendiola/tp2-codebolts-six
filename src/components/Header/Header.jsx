@@ -13,7 +13,6 @@ const Header = ({ name, lastName, city, age, ageText, backgroundImage, backgroun
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center top',
     backgroundSize: 'cover',
-    width: 'calc(100vw - var(--sidebar-width))',
     height: '100vh',
     position: 'relative',
     gridArea: 'header',
