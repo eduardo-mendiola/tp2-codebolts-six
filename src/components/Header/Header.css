@@ -95,12 +95,7 @@ header {
     font-size: 4rem;
 }
 
-@media (max-width:400px){
- header{
-    width: 100vw;
-  }
-}
-@media (max-width: 900px) and (min-width: 401px) {
+@media (max-width: 900px){
   header{
     width: 100vw;
   }

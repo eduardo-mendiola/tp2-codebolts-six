@@ -41,15 +41,7 @@ body.dark-mode {
   color: #f1f1f1;
 }
 
-
-
-
-@media (max-width:400px){
- .main-content{
-    width: 100vw;
-  }
-}
-@media (max-width: 900px) and (min-width: 401px) {
+@media (max-width: 900px){
   .app-container {
     display: block;
     position: relative;
