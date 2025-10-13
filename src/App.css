@@ -14,6 +14,7 @@
   padding: 0;
   height: 100vh;
   overflow-y: auto;
+  overflow-x: hidden;
   transition: transform 0.3s ease;
 }
 /* Make the navigation fill the space */
