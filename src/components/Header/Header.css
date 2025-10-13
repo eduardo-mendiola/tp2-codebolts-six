@@ -1,7 +1,7 @@
 header {
     /* background: url("../src/assets/eduardo/eduardo_header.webp") no-repeat center top; */
     background-size: cover;
-    width: var(--section-width);
+    width: calc(100vw - var(--sidebar-width));
     height: 100vh;
     /* overflow-x: hidden; */
     background-position: top center;
@@ -96,12 +96,20 @@ header {
 }
 
 @media (max-width:400px){
- .header{
+ header{
     width: 100vw;
   }
 }
 @media (max-width: 900px) and (min-width: 401px) {
-  .header-information{
+  header{
     width: 100vw;
+  }
+
+  
+  .age_years , .age_number, .city{
+    font-size: 2rem;
+  }
+  .name, .lastname{
+    font-size: 3rem;
   }
 }
