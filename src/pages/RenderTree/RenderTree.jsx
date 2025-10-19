@@ -3,7 +3,7 @@ import "@/pages/RenderTree/RenderTree.css";
 import Header from '@/components/Header/Header';
 import componentesHeader from '@/assets/componentes/header_componentes.webp';
 import componentesHeaderDark from '@/assets/componentes/header_componentes_dark.webp';
-import renderTreeImage from '@/assets/componentes/render_tree.png';
+import renderTreeImage from '@/assets/componentes/render_tree.webp';
 import Footer from '@/components/Footer/Footer';
 
 export default function RenderTree() {
