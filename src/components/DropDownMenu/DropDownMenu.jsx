@@ -16,11 +16,11 @@ export default function DropDownMenu() {
 
   return (
     <div className="dropdown-menu" style={menuStyle}>
-      <Link to="/carina" className="dropdown-item">
+      <Link to="/carina" className="dropdown-item" onClick={() => setIsSidebarOpen(false)}>
         <MemberButton imgsrc={imgCar} name="Carina" />
       </Link>
 
-      <Link to="/eduardo" className="dropdown-item">
+      <Link to="/eduardo" className="dropdown-item" onClick={() => setIsSidebarOpen(false)}>
         <MemberButton imgsrc={imgEdu} name="Eduardo" />
       </Link>
     </div>

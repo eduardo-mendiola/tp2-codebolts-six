@@ -32,7 +32,7 @@ export default function Sidebar() {
         </div>
 
         <nav className="nav-links">
-          <Link className="nav-link" to="/">Inicio</Link>
+          <Link className="nav-link" to="/" onClick={() => setIsSidebarOpen(false)}>Inicio</Link>
 
           <div className="menu-wrapper">
 
@@ -44,13 +44,13 @@ export default function Sidebar() {
               Integrantes
             </button>
 
-            {showMenu && <DropDownMenu />} 
+            {showMenu && <DropDownMenu closeSidebar={() => setIsSidebarOpen(false)} />} 
         </div>
-          <Link className="nav-link" to="/simpsons">Simpsons</Link>
-          <Link className="nav-link" to="/lugares-argentina">Lugares</Link>
-          <Link className="nav-link" to="/componentes">Componentes</Link>
-          <Link className="nav-link" to="/carpetas">Carpetas</Link>
-          <Link className="nav-link" to="/bitacora">Bitácora</Link>
+          <Link className="nav-link" to="/simpsons" onClick={() => setIsSidebarOpen(false)}>Simpsons</Link>
+          <Link className="nav-link" to="/lugares-argentina" onClick={() => setIsSidebarOpen(false)}>Lugares</Link>
+          <Link className="nav-link" to="/componentes" onClick={() => setIsSidebarOpen(false)}>Componentes</Link>
+          <Link className="nav-link" to="/carpetas" onClick={() => setIsSidebarOpen(false)}>Carpetas</Link>
+          <Link className="nav-link" to="/bitacora" onClick={() => setIsSidebarOpen(false)}>Bitácora</Link>
           <DarkModeButton />
         </nav>
       </aside>
