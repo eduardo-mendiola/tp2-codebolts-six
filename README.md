@@ -13,7 +13,7 @@
 
 | Nombre              | Página individual     |
 |---------------------|-----------------------|
-| Rodrigues, Carina   | [Carina.jsx](jhttps://github.com/eduardo-mendiola/tp2-codebolts-six/blob/main/src/pages/Carina/Carina.jsx) |
+| Rodrigues, Carina   | [Carina.jsx](https://github.com/eduardo-mendiola/tp2-codebolts-six/blob/main/src/pages/Carina/Carina.jsx) |
 | Mendiola, Eduardo E.| [Eduardo.jsx](https://github.com/eduardo-mendiola/tp2-codebolts-six/blob/main/src/pages/Eduardo/Eduardo.jsx) |
 
 
