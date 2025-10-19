@@ -85,8 +85,8 @@ export default function Carina() {
   ];
 
 
-  const conocidos = [2, 5, 7];
-  const meGustaria = [9, 10, 12];
+  const conocidos = [2, 3, 4, 5, 6, 7, 8, 11, 13, 14];
+  const meGustaria = [9, 10, 12, 15, 17, 18, 1];
   const verbos = {
     pasado: "Conocí",
     presente: "No conozco",
