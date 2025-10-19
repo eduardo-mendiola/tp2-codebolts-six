@@ -6,9 +6,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 15px;
   font-family: var(--fuente-texto);
-  gap: 10%;
+  gap: 5%;
   overflow-y: auto;
   transition: transform 0.3s ease;
 }
