@@ -25,7 +25,7 @@
 ## Enlaces del Proyecto
 - **Repositorio GitHub:** [tp2-codebolts-six](https://github.com/eduardo-mendiola/tp2-codebolts-six)
 - **Proyecto Desplegado:** [Vercel](https://tp2-codebolts-six.vercel.app)
-- **Rama Principal:** `eduardo`
+- **Rama Principal:** `main`
 
 ## Descripción del Proyecto
 
@@ -306,7 +306,7 @@ npm run preview
 
 ### **Control de Versiones**
 - **Commits**: Mensajes descriptivos y atómicos
-- **Branching**: Rama principal `eduardo` con features individuales
+- **Branching**: Rama principal `main` con features individuales
 - **Documentation**: README actualizado y bitácora detallada
 
 ## Logros del Equipo
