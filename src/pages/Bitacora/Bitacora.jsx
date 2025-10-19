@@ -100,6 +100,7 @@ export default function Bitacora() {
           <li>18/10/25: Finalización de bitácora completa y documentación del proyecto.</li>
           <li>19/10/25: Creación del componente Simpsons con FlippingCards interactivas.</li>
           <li>19/10/25: Implementación del componente LugaresArgentina con integración de datos JSON.</li>
+          <li>19/10/25: Instalación de react-zoom-pan-pinch e implementación de ZoomableImage en RenderTree.</li>
         </ol>
 
         <section>
@@ -278,6 +279,19 @@ export default function Bitacora() {
             </ul>
           </p>
 
+          <h3 style={subHeadingStyle}>ZoomableImage</h3>
+          <p style={paragraphStyle}>Componente de imagen con funcionalidad de zoom implementado en RenderTree para mejor visualización.
+            <ul>
+              <li><strong>React Zoom Pan Pinch:</strong> Integración de la librería react-zoom-pan-pinch para funcionalidad de zoom</li>
+              <li><strong>Interactive Zooming:</strong> Permite zoom in/out mediante scroll del mouse o gestos táctiles</li>
+              <li><strong>Pan Functionality:</strong> Capacidad de arrastrar la imagen cuando está ampliada</li>
+              <li><strong>Pinch to Zoom:</strong> Soporte para gestos pinch en dispositivos táctiles</li>
+              <li><strong>Responsive Controls:</strong> Controles adaptativos para diferentes dispositivos</li>
+              <li><strong>Enhanced UX:</strong> Mejora significativa en la experiencia de usuario para visualizar diagramas detallados</li>
+              <li><strong>Reset Functionality:</strong> Capacidad de resetear zoom y posición a valores por defecto</li>
+            </ul>
+          </p>
+
         </section>
 
         
@@ -383,6 +397,7 @@ export default function Bitacora() {
             <ul>
               <li><strong>React 18:</strong> Framework principal para la interfaz de usuario</li>
               <li><strong>React Router DOM:</strong> Manejo de navegación y rutas</li>
+              <li><strong>React Zoom Pan Pinch:</strong> Librería para funcionalidad de zoom, pan y pinch en imágenes</li>
               <li><strong>Modern React Patterns:</strong> Hooks, Context API, y componentes funcionales</li>
               <li><strong>CSS3 Features:</strong> Flexbox, Grid, Animations, y Variables CSS</li>
             </ul>
@@ -408,6 +423,7 @@ export default function Bitacora() {
               <li><strong>Mantenimiento Simplificado:</strong> Cambios en un componente se reflejan en toda la aplicación</li>
               <li><strong>Performance:</strong> SPA elimina recargas de página completa</li>
               <li><strong>Developer Experience:</strong> Hot reload y mejor debugging con React DevTools</li>
+              <li><strong>Ecosistema NPM:</strong> Fácil integración de librerías como react-zoom-pan-pinch para funcionalidades avanzadas</li>
             </ul>
           </p>
 
@@ -441,6 +457,18 @@ export default function Bitacora() {
               <li><strong>Accessibility:</strong> Mejora en ARIA labels y navegación por teclado</li>
               <li><strong>Testing:</strong> Implementación de tests unitarios y de integración</li>
               <li><strong>TypeScript:</strong> Migración gradual para mejor type safety</li>
+            </ul>
+          </p>
+
+          <h3 style={subHeadingStyle}>Mejoras de Usabilidad Implementadas</h3>
+          <p style={paragraphStyle}>Implementaciones específicas para mejorar la experiencia del usuario:
+            <ul>
+              <li><strong>ZoomableImage en RenderTree:</strong> Funcionalidad de zoom interactivo para diagramas complejos</li>
+              <li><strong>Gestos Táctiles:</strong> Soporte completo para pinch-to-zoom en dispositivos móviles</li>
+              <li><strong>Navegación Intuitiva:</strong> Controles de pan y zoom para explorar diagramas detallados</li>
+              <li><strong>Responsive Zoom:</strong> Adaptación automática de controles según el dispositivo</li>
+              <li><strong>Reset Functionality:</strong> Botones y gestos para resetear vista a estado original</li>
+              <li><strong>Library Integration:</strong> Uso estratégico de react-zoom-pan-pinch para funcionalidad robusta</li>
             </ul>
           </p>
 
