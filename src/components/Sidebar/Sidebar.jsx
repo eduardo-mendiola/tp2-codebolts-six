@@ -46,6 +46,7 @@ export default function Sidebar() {
 
             {showMenu && <DropDownMenu />} 
         </div>
+          <Link className="nav-link" to="/simpsons">Simpsons</Link>
           <Link className="nav-link" to="/componentes">Componentes</Link>
           <Link className="nav-link" to="/carpetas">Carpetas</Link>
           <Link className="nav-link" to="/bitacora">Bitácora</Link>
