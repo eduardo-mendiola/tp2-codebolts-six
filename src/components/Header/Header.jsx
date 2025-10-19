@@ -3,7 +3,7 @@ import { useTheme } from '@/context/ThemeContext';
 import '@/components/Header/Header.css';
 
 
-const Header = ({ name, lastName, city, age, ageText, backgroundImage, backgroundImageDark, textColor, shadowColor }) => {
+const Header = ({ height, name, lastName, city, age, ageText, backgroundImage, backgroundImageDark, textColor, shadowColor }) => {
 
   const { isDarkMode } = useTheme();
   console.log("Header - isDarkMode:", isDarkMode);
@@ -13,7 +13,7 @@ const Header = ({ name, lastName, city, age, ageText, backgroundImage, backgroun
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center top',
     backgroundSize: 'cover',
-    height: '100vh',
+    height: height || '100vh', // ← fallback
     position: 'relative',
     gridArea: 'header',
   };

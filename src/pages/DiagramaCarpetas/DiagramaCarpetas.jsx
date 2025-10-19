@@ -1,59 +1,164 @@
+import { useTheme } from '@/context/ThemeContext';
+import "@/pages/DiagramaCarpetas/DiagramaCarpetas.css";
 import Header from '@/components/Header/Header';
 import carpetasHeader from '@/assets/carpetas/header_carpetas.webp';
-import Section from '@/components/Section/Section';
-import Card from '@/components/Card/Card.jsx';
+import carpetasHeaderDark from '@/assets/carpetas/header_carpetas_dark.webp';
 import Footer from '@/components/Footer/Footer';
 
-export default function Inicio() {
+export default function DiagramaCarpetas() {
+  const { isDarkMode } = useTheme();
 
-  const stack =
-    [
-      { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", alt: "HTML5", text: "HTML5" },
-      { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", alt: "CSS3", text: "CSS3" },
-      { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", alt: "JavaScript", text: "JavaScript" },
-      { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", alt: "React", text: "React" }
-    ]
+  // 🔹 Estilos dinámicos según el modo
+  const containerStyle = {
+    backgroundColor: isDarkMode ? 'var(--color-background-body-dark)' : '#fff', // gris oscuro / gris claro
+    color: isDarkMode ? '#f1f1f1' : '#272727',
+    transition: 'all 0.3s ease',
+    padding: '0',
+    maxWidth: '900px',
+    margin: '0 auto 2rem',
+    lineHeight: 1.6,
+  };
 
+  const headingStyle = {
+    color: isDarkMode ? '#a2d5f2' : '#1a1a1a',
+    borderBottom: isDarkMode ? '2px solid #555' : '2px solid #ddd',
+    transition: 'all 0.3s ease',
+    margin: '2rem 0 1rem',
+    paddingBottom: '2rem',
+    textAlign: 'center',
+    fontSize: '3rem'
+  };
 
+  const sectionHeadingStyle = {
+    color: isDarkMode ? '#a2d5f2' : '#1a1a1a',
+    borderBottom: isDarkMode ? '2px solid #555' : '2px solid #ddd',
+    paddingBottom: '0.3rem',
+    fontSize: '1.8rem',
+    margin: '2rem 0 1rem'
+  };
 
-  const tools = [
-    { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", alt: "Git", text: "Git" },
-    { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", alt: "GitHub", text: "GitHub" },
-    { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", alt: "VSCode", text: "Visual Studio Code" },
-    { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg", alt: "Vercel", text: "Vercel" }
+  const subHeadingStyle = {
+    color: isDarkMode ? '#cfcfcf' : '#444',
+    fontSize: '1.4rem',
+    margin: '1.5rem 0 0.5rem'
+  };
+
+  const paragraphStyle = {
+    color: isDarkMode ? '#e0e0e0' : '#000000',
+    marginBottom: '2rem'
+  };
+
+  const linkStyle = {
+    color: isDarkMode ? '#4ec9b0' : '#1e90ff',
+    textDecoration: 'none'
+  };
+
+  const treeStyle = {
+    backgroundColor: isDarkMode ? '#2e2e2e' : '#fff',
+    color: isDarkMode ? '#d4d4d4' : '#4c4c4c',
+    border: isDarkMode ? '1px solid rgba(255, 255, 255, 0.1)' : '1px solid rgba(0, 0, 0, 0.06)',
+    padding: '1.5rem',
+    borderRadius: '8px',
+    overflowX: 'auto',
+    whiteSpace: 'pre',
+    lineHeight: '1.4',
+    display: 'inline-block',
+    textAlign: 'left',
+    maxWidth: '100%',
+    boxSizing: 'border-box'
+  };
+
+  const treeLines = [
+    "📁 project-root/",
+    "│",
+    "├── 📁 src/",
+    "│   ├── 📁 assets/",
+    "│   ├── 📁 components/",
+    "│   │   ├── 📁 Card/",
+    "│   │   │   ├── 📄 Card.css",
+    "│   │   │   └── 📄 Card.jsx",
+    "│   │   ├── 📁 Carrusel/",
+    "│   │   │   ├── 📄 Carrusel.css",
+    "│   │   │   └── 📄 Carrusel.jsx",
+    "│   │   ├── 📁 DropDownMenu/",
+    "│   │   │   ├── 📄 DropDownMenu.css",
+    "│   │   │   └── 📄 DropDownMenu.jsx",
+    "│   │   ├── 📁 FlippingCard/",
+    "│   │   │   ├── 📄 FlippingCard.css",
+    "│   │   │   └── 📄 FlippingCard.jsx",
+    "│   │   ├── 📁 Footer/",
+    "│   │   │   ├── 📄 Footer.css",
+    "│   │   │   └── 📄 Footer.jsx",
+    "│   │   ├── 📁 Header/",
+    "│   │   │   ├── 📄 Header.css",
+    "│   │   │   └── 📄 Header.jsx",
+    "│   │   ├── 📁 Line/",
+    "│   │   │   ├── 📄 Line.css",
+    "│   │   │   └── 📄 Line.jsx",
+    "│   │   ├── 📁 MemberButton/",
+    "│   │   │   ├── 📄 MemberButton.css",
+    "│   │   │   └── 📄 MemberButton.jsx",
+    "│   │   ├── 📁 ScrollTop/",
+    "│   │   │   └── 📄 ScrollTop.jsx",
+    "│   │   ├── 📁 Section/",
+    "│   │   │   ├── 📄 Section.css",
+    "│   │   │   └── 📄 Section.jsx",
+    "│   │   ├── 📁 SideBar/",
+    "│   │   │   ├── 📄 SideBar.css",
+    "│   │   │   └── 📄 SideBar.jsx",
+    "│   │   ├── 📁 Title/",
+    "│   │   │   ├── 📄 Title.css",
+    "│   │   │   └── 📄 Title.jsx",
+    "│   ├── 📁 data/",
+    "│   │   └── 📄 lugares.js",
+    "│   ├── 📁 pages/",
+    "│   │   ├── 📄 Bitacora/Bitacora.jsx",
+    "│   │   ├── 📄 Carina/Carina.jsx",
+    "│   │   ├── 📄 Eduardo/Eduardo.jsx",
+    "│   │   └── 📄 Inicio/Inicio.jsx",
+    "│   ├── 📁 styles/",
+    "│   │   ├── 📄 _reset.css",
+    "│   │   └── 📄 variables.css",
+    "│   ├── 📄 App.css",
+    "│   ├── 📄 App.jsx",
+    "│   ├── 📄 index.css",
+    "│   └── 📄 main.jsx",
+    "│",
+    "├── 📁 public/",
+    "│   ├── 📄 favicon.png",
+    "│   ├── 📄 logo.png",
+    "│   └── (imágenes e íconos…)",
+    "│",
+    "├── 📄 package.json",
+    "├── 📄 package-lock.json",
+    "├── 📄 vite.config.js",
+    "└── 📄 README.md"
   ];
 
+  const tree = treeLines.join("\n");
 
   return (
-    <div className='sectionInicio'>
+    <>
       <Header
+        height="40vh"
         name="Diagrama de"
         lastName="Carpetas"
         age=""
         city=""
         backgroundImage={carpetasHeader}
+        backgroundImageDark={carpetasHeaderDark}
         textColor="var(--color-white-yellow)"
       />
-
-      <h1 style={{ padding: '2rem', margin: '0', fontSize: '2.3rem', fontWeight: 'bold' }}>
-        Bienvenidos a nuestra página web
-      </h1>
-
-      <p style={{ padding: '2rem', margin: '0', fontSize: '1rem', lineHeight: '1.6', background: 'var(--color-white-yellow)' }}>
-        Somos Carina, de La Plata, y Eduardo, de Mar del Plata, estudiantes de la Tecnicatura en Desarrollo de Software a distancia del <a href='https://ifts29.edu.ar/' target="_blank">Instituto de Formación Técnica Superior N° 29.</a><br/>
-        Hemos trabajado juntos en otros proyectos académicos, pero este es nuestro primer trabajo desarrollado con React, realizado para la materia Desarrollo de Sistemas Web Frontend.
-        Nuestro objetivo es crear una página web que refleje nuestra identidad, intereses y habilidades, combinando elegancia y funcionalidad.
-        A través de este proyecto, buscamos aplicar nuestros conocimientos en diseño web y desarrollo frontend, ofreciendo una experiencia que permita a los visitantes conocernos mejor como futuros profesionales del área.
-      </p>
-      <Section title="Stack Tecnológico" cards={stack} CardComponent={Card} />
-      <Section title="Herramientas de Desarrollo" cards={tools} CardComponent={Card} showLine={false} />
+      <div className="folder-container" style={containerStyle} translate="no">
+        <h2 style={sectionHeadingStyle}>Árbol de archivos</h2>
+        <p style={paragraphStyle}>
+          Estructura del proyecto que muestra la organización de carpetas, componentes, estilos y archivos de configuración utilizados en la aplicación.
+        </p>
+        <div class="file-tree-wrapper">
+          <pre className="file-tree" style={treeStyle}>{tree}</pre>
+        </div>
+      </div>
       <Footer />
-    </div>
-
+    </>
   );
 }
-
-
-
-
-
