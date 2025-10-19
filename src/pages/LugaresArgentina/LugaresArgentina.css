@@ -1,6 +1,6 @@
 /* || MAIN CONTENT */
 
-.tree-container {
+.lugar-container {
     /* font-family: "JetBrains Mono", monospace; */
     color: #272727;
     padding: 2rem;
@@ -10,7 +10,7 @@
     /* background-color: #f9f9f9; */
 }
 
-.tree-container h1 {
+.lugar-container h1 {
     /* color: #66ccff; */
     margin-bottom: 0.5rem;
     text-align: center;
@@ -21,7 +21,7 @@
     padding-bottom: 2rem;
 }
 
-.tree-container h2 {
+.lugar-container h2 {
     font-size: 1.8rem;
     margin: 2rem 0 1rem;
     color: #1a1a1a;
@@ -29,14 +29,13 @@
     padding-bottom: 0.3rem;
 }
 
-.tree-container h3 {
+.lugar-container h3 {
     font-size: 1.4rem;
     margin: 1.5rem 0 0.5rem;
     color: #444;
 }
 
-.tree-container p {
-    color: #000000;
+.lugar-container p {
     margin-bottom: 2rem;
 }
 
@@ -112,6 +111,7 @@ a:hover {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+    margin-top: 3rem;
 }
 
 /* El pre queda centrado (display:inline-block) pero su texto queda alineado a la izquierda */

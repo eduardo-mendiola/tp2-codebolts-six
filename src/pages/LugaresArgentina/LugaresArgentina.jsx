@@ -1,5 +1,5 @@
 import { useTheme } from '@/context/ThemeContext';
-import "@/pages/Simpsons/Simpsons.css";
+import "@/pages/LugaresArgentina/LugaresArgentina.css";
 import Header from '@/components/Header/Header';
 import lugaresHeader from '@/assets/lugares/header_lugares.webp';
 import lugaresHeaderDark from '@/assets/lugares/header_lugares_dark.webp';
@@ -30,7 +30,7 @@ export default function LugaresArgentina() {
 
   const paragraphStyle = {
     color: isDarkMode ? '#e0e0e0' : '#000000',
-    marginBottom: '2rem'
+    marginBottom: '1rem'
   };
 
   // Estados para cargar lugares
@@ -55,10 +55,13 @@ export default function LugaresArgentina() {
         shadowColor ="2px 5px 10px rgba(0, 0, 0, 0.9)"
       />
 
-      <div className="tree-container" style={containerStyle} translate="no">
+      <div className="lugar-container" style={containerStyle} translate="no">
         <h2 style={sectionHeadingStyle}>Lugares turísticos</h2>
         <p style={paragraphStyle}>
           Estos son algunos de los lugares turísticos más hermosos de la Argentina. Cada tarjeta muestra el nombre del destino y la provincia a la que pertenece.
+        </p>
+        <p style={paragraphStyle}>
+          Los datos se cargan dinámicamente desde un recurso JSON y se representan en tarjetas interactivas mediante el manejo de estado y el mapeo de componentes en React. Cada elemento del JSON se procesa para generar un componente individual, aplicando propiedades como imagen, título y subtítulo, lo que permite un renderizado consistente y reutilizable en toda la interfaz.
         </p>
 
         <div className="file-tree-wrapper">
