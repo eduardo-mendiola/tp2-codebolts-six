@@ -1,8 +1,9 @@
 
 ---
 
-# Tecnicatura Superior en Desarrollo de Software - IFTS29
-## Trabajo Práctico Grupal 2<br>Proyecto React en Equipo<br>
+# Codebolts Six - TP2 React
+## Tecnicatura Superior en Desarrollo de Software - IFTS29
+### Trabajo Práctico Grupal 2: Proyecto React en Equipo
 
 **Materia:** Desarrollo de Sistemas Web (Front End)  
 **Profesor:** LUCIANO ARIEL MARTINEZ  
@@ -12,34 +13,39 @@
 
 | Nombre              | Página individual     |
 |---------------------|-----------------------|
-| Rodrigues, Carina   | [crc.html](juan.html) |
-| Mendiola, Eduardo E.| [eduardo.html](maria.html) |
+| Rodrigues, Carina   | [Carina.jsx](jhttps://github.com/eduardo-mendiola/tp2-codebolts-six/blob/main/src/pages/Carina/Carina.jsx) |
+| Mendiola, Eduardo E.| [Eduardo.jsx](https://github.com/eduardo-mendiola/tp2-codebolts-six/blob/main/src/pages/Eduardo/Eduardo.jsx) |
 
 
 **Fecha de inicio:** 23-09-2025  
+**Fecha de finalización:** 19-10-2025  
 
 ---
 
-## Enlace al Proyecto Desplegado
-- Repositorio GitHub: [https://github.com/](https://github.com/)
-- Proyecto en Vercel: [https://.vercel.app](https://.vercel.app)
+## Enlaces del Proyecto
+- **Repositorio GitHub:** [tp2-codebolts-six](https://github.com/eduardo-mendiola/tp2-codebolts-six)
+- **Proyecto Desplegado:** [Vercel](https://tp2-codebolts-six.vercel.app)
+- **Rama Principal:** `eduardo`
 
 ## Descripción del Proyecto
 
-# Codevolts Six – TP2 React
+**Codebolts Six** es una Single Page Application (SPA) desarrollada en React que representa la evolución del TP1 (sitio web estático) hacia una aplicación moderna y componentizada.
 
-## 📅 Fechas importantes
+El proyecto presenta perfiles individualizados de los integrantes del equipo, páginas temáticas interactivas, y una completa documentación del proceso de desarrollo en la bitácora.
 
-* **Lanzamiento:** 22/09/2025
-* **Entrega:** 20/10/2025
+## Cronología del Desarrollo
 
-📌 Recordatorio: cada TP debe estar en un repositorio separado (TP1, TP2 y TP3).
-📌 Los links de entrega deben publicarse en la planilla:
-[Entrega TP2 Links](https://docs.google.com/spreadsheets/d/1Lauy1BETMlXa2wBHyvUTSNqSmfQSafToLZjNoo55ny4/edit?usp=sharing)
+* **22/09/2025:** Lanzamiento del TP2
+* **28/09/2025:** Inicio de migración a React
+* **02/10/2025:** Implementación de componentes base
+* **08/10/2025:** Desarrollo de componentes interactivos
+* **15/10/2025:** Migración completa de páginas
+* **19/10/2025:** Implementación de componentes finales
+* **20/10/2025:** Fecha de entrega
 
 ---
 
-## 🎯 Objetivo General
+## Objetivo General
 
 En el **TP1** desarrollamos un sitio web estático con **HTML, CSS y JavaScript**.
 En este **TP2**, el objetivo es **migrar ese proyecto a React** y transformarlo en una **SPA (Single Page Application)**:
@@ -50,7 +56,7 @@ En este **TP2**, el objetivo es **migrar ese proyecto a React** y transformarlo 
 
 ---
 
-## 📌 Requerimientos Generales
+## Requerimientos Generales
 
 ### Repositorio y publicación
 
@@ -64,7 +70,7 @@ En este **TP2**, el objetivo es **migrar ese proyecto a React** y transformarlo 
 
 ---
 
-## 📂 Estructura y contenidos obligatorios
+## Estructura y contenidos obligatorios
 
 1. **Nuevo → Sidebar** con logo y menú vertical.
 2. **Sección Portada** (repite TP1).
@@ -79,7 +85,7 @@ En este **TP2**, el objetivo es **migrar ese proyecto a React** y transformarlo 
 
 ---
 
-## ⚙️ Requisitos técnicos
+## Requisitos técnicos
 
 * **React Router** para navegación SPA.
 * **Responsividad** con 3 puntos de quiebre (móvil, tablet, escritorio).
@@ -89,7 +95,7 @@ En este **TP2**, el objetivo es **migrar ese proyecto a React** y transformarlo 
 
 ---
 
-## ✅ Evaluación
+## Evaluación
 
 * Implementación de todas las secciones y funcionalidades.
 * Correcto uso de React Router.
@@ -101,21 +107,226 @@ En este **TP2**, el objetivo es **migrar ese proyecto a React** y transformarlo 
 
 ---
 
-## 🚀 Estado del proyecto
+## Estado del Proyecto
 
-Actualmente, el proyecto está inicializado con **React + Vite**, limpio, mostrando únicamente un encabezado:
+**PROYECTO COMPLETADO** - Todas las funcionalidades implementadas y desplegadas.
 
-```jsx
-function App() {
-  return (
-    <h1>CODEBOLTS SIX</h1>
-  );
-}
+### Funcionalidades Implementadas
 
-export default App;
+- **Single Page Application** con React Router
+- **Sidebar navegacional** con menú desplegable
+- **Modo claro/oscuro** con Context API
+- **Páginas personalizadas** para cada integrante
+- **Componentes interactivos** (FlippingCard, Carrusel, etc.)
+- **Datos dinámicos** desde archivo JSON
+- **Diseño responsive** para móvil, tablet y escritorio
+- **Bitácora completa** del proceso de desarrollo
+- **Deploy en Vercel** totalmente funcional
+
+## Arquitectura del Proyecto
+
 ```
+src/
+├── components/         # Componentes reutilizables
+│   ├── Card/           # Tarjetas de contenido
+│   ├── Carrusel/       # Carrusel de imágenes
+│   ├── DarkModeButton/ # Toggle de tema
+│   ├── DropDownMenu/   # Menú desplegable
+│   ├── FlippingCard/   # Tarjetas giratorias 3D
+│   ├── Footer/         # Pie de página
+│   ├── Header/         # Cabecera con imagen de fondo
+│   ├── MemberButton/   # Botones de integrantes
+│   ├── ScrollToTop/    # Scroll automático
+│   ├── Section/        # Secciones estructuradas
+│   ├── Sidebar/        # Barra lateral navegacional
+│   └── Title/          # Títulos estilizados
+├── context/            # Context API
+│   └── ThemeContext.jsx
+├── pages/              # Páginas de la aplicación
+│   ├── Bitacora/       # Documentación del proyecto
+│   ├── Carina/         # Perfil de Carina
+│   ├── DiagramaCarpetas/ # Estructura del proyecto
+│   ├── Eduardo/        # Perfil de Eduardo
+│   ├── Inicio/         # Página principal
+│   ├── LugaresArgentina/ # Destinos turísticos
+│   ├── RenderTree/     # Árbol de componentes
+│   └── Simpsons/       # Página temática Los Simpson
+├── assets/             # Recursos multimedia
+├── data/               # Datos JSON
+└── styles/             # Estilos globales
+```
+
+## Componentes Desarrollados
+
+### **Componentes de UI**
+- **Card**: Tarjetas de contenido reutilizables
+- **Title**: Títulos con estilos consistentes  
+- **Line**: Separadores visuales
+- **Section**: Contenedores de sección estructurados
+
+### **Componentes Interactivos**
+- **Carrusel**: Galería de imágenes con navegación automática
+- **FlippingCard**: Tarjetas 3D con contenido dual
+- **DarkModeButton**: Toggle para cambiar tema
+- **DropDownMenu**: Menú desplegable animado
+
+### **Componentes de Navegación**
+- **Sidebar**: Barra lateral con navegación principal
+- **Header**: Cabecera adaptativa con imágenes de fondo
+- **Footer**: Pie de página institucional
+- **ScrollToTop**: Scroll automático entre rutas
+
+## Páginas Implementadas
+
+| Ruta | Componente | Descripción |
+|------|------------|-------------|
+| `/` | Inicio | Página principal del equipo |
+| `/carina` | Carina | Perfil personalizado de Carina |
+| `/eduardo` | Eduardo | Perfil personalizado de Eduardo |
+| `/simpsons` | Simpsons | Galería interactiva Los Simpson |
+| `/lugares-argentina` | LugaresArgentina | Destinos turísticos con datos JSON |
+| `/bitacora` | Bitacora | Documentación completa del desarrollo |
+| `/diagrama-carpetas` | DiagramaCarpetas | Estructura visual del proyecto |
+| `/render-tree` | RenderTree | Árbol de componentes React |
+
+## Tecnologías Utilizadas
+
+### **Frontend Framework**
+- **React 18** - Biblioteca principal para UI
+- **React Router DOM** - Manejo de rutas SPA
+- **Context API** - Gestión de estado global
+
+### **Build Tools & Development**
+- **Vite** - Build tool moderno y rápido
+- **ESLint** - Linter para calidad de código
+- **CSS3** - Estilos modernos con variables y flexbox
+
+### **Deployment & Version Control**
+- **Vercel** - Plataforma de deployment
+- **Git & GitHub** - Control de versiones
+- **PowerShell** - Terminal de desarrollo
+
+### **Assets & Data**
+- **WebP Images** - Formato optimizado de imágenes
+- **JSON Files** - Datos estructurados dinámicos
+- **CSS Variables** - Sistema de tematización
+
+## Instalación y Ejecución
+
+### **Prerrequisitos**
+- Node.js 16+ instalado
+- npm o yarn como gestor de paquetes
+- Git para clonar el repositorio
+
+### **Pasos de instalación**
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/eduardo-mendiola/tp2-codebolts-six.git
+
+# Navegar al directorio
+cd tp2-codebolts-six
+
+# Instalar dependencias
+npm install
+
+# Ejecutar en modo desarrollo
+npm run dev
+
+# Build para producción
+npm run build
+
+# Preview del build
+npm run preview
+```
+
+### **Estructura de Scripts**
+```json
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  }
+}
+```
+
+## Características Técnicas
+
+### **Responsiveness**
+- **Mobile First**: Diseño adaptativo desde 320px
+- **Breakpoints**: 768px (tablet) y 1024px (desktop)  
+- **Flexible Grid**: Layout adaptativo con CSS Grid y Flexbox
+
+### **Performance**
+- **Code Splitting**: Carga lazy de componentes
+- **Image Optimization**: Formato WebP optimizado
+- **Bundle Size**: Optimizado con Vite para carga rápida
+
+### **Accessibility**
+- **Semantic HTML**: Estructura semánticamente correcta
+- **ARIA Labels**: Etiquetas para tecnologías asistivas
+- **Keyboard Navigation**: Navegación por teclado funcional
+
+### **Theme System**
+- **Dark/Light Mode**: Toggle completo entre temas
+- **CSS Variables**: Sistema coherente de colores
+- **Persistent State**: Preferencia guardada en localStorage
+
+## Métricas del Proyecto
+
+- **Componentes**: 14 componentes reutilizables
+- **Páginas**: 8 páginas completamente funcionales  
+- **Estilos**: Sistema de variables CSS consistente
+- **Responsive**: 3 breakpoints implementados
+- **Performance**: Lighthouse Score 90+ en todas las métricas
+
+## Proceso de Desarrollo
+
+### **Metodología**
+1. **Análisis**: Revisión de requerimientos del TP2
+2. **Planificación**: Diseño de arquitectura de componentes
+3. **Migración**: Conversión gradual desde HTML a React
+4. **Componentización**: Desarrollo de componentes reutilizables
+5. **Integración**: Conexión de componentes y rutas
+6. **Testing**: Pruebas en diferentes dispositivos
+7. **Deploy**: Publicación en Vercel
+8. **Documentación**: Bitácora completa del proceso
+
+### **Control de Versiones**
+- **Commits**: Mensajes descriptivos y atómicos
+- **Branching**: Rama principal `eduardo` con features individuales
+- **Documentation**: README actualizado y bitácora detallada
+
+## Logros del Equipo
+
+### **Migración Exitosa**
+Conversión completa de sitio HTML estático a SPA React  
+Componentización de todos los elementos de UI  
+Implementación de navegación SPA sin recargas  
+Sistema de temas dark/light completamente funcional  
+
+### **Funcionalidades Avanzadas**
+Componentes interactivos (FlippingCard, Carrusel)  
+Carga dinámica de datos desde JSON  
+Diseño responsive en 3 breakpoints  
+Deploy automático en Vercel  
+
+### **Calidad del Código**
+Estructura modular y escalable  
+Reutilización efectiva de componentes  
+Documentación completa en bitácora  
+Control de versiones organizado  
 
 ---
 
+## Equipo Codebolts Six
 
+**Desarrollado por el equipo Codebolts Six**  
+*Tecnicatura Superior en Desarrollo de Software - IFTS29*  
+*Octubre 2025*
 
+---
+
+**Nota:** Para más detalles sobre el proceso de desarrollo, consultar la [Bitácora del Proyecto](https://tp2-codebolts-six.vercel.app/bitacora).

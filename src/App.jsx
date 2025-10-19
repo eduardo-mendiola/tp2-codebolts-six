@@ -8,6 +8,7 @@ import Inicio from '@/pages/Inicio/Inicio';
 import Eduardo from '@/pages/Eduardo/Eduardo';
 import Carina from '@/pages/Carina/Carina';
 import Simpsons from '@/pages/Simpsons/Simpsons';
+import LugaresArgentina from '@/pages/LugaresArgentina/LugaresArgentina';
 import RenderTree from '@/pages/RenderTree/RenderTree';
 import DiagramaCarpetas from '@/pages/DiagramaCarpetas/DiagramaCarpetas';
 import Bitacora from '@/pages/Bitacora/Bitacora';
@@ -27,6 +28,7 @@ function App() {
               <Route path="/carina" element={<Carina />} />
               <Route path="/eduardo" element={<Eduardo />} />
               <Route path="/simpsons" element={<Simpsons />} />
+              <Route path="/lugares-argentina" element={<LugaresArgentina />} />
               <Route path="/componentes" element={<RenderTree />} />
               <Route path="/carpetas" element={<DiagramaCarpetas />} />
               <Route path="/bitacora" element={<Bitacora />} />
