@@ -1,59 +1,84 @@
+import { useTheme } from '@/context/ThemeContext';
+import "@/pages/RenderTree/RenderTree.css";
 import Header from '@/components/Header/Header';
 import componentesHeader from '@/assets/componentes/header_componentes.webp';
-import Section from '@/components/Section/Section';
-import Card from '@/components/Card/Card.jsx';
+import componentesHeaderDark from '@/assets/componentes/header_componentes_dark.webp';
+import renderTreeImage from '@/assets/componentes/render_tree.png';
 import Footer from '@/components/Footer/Footer';
 
-export default function Inicio() {
+export default function RenderTree() {
+  const { isDarkMode } = useTheme();
 
-  const stack =
-    [
-      { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", alt: "HTML5", text: "HTML5" },
-      { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", alt: "CSS3", text: "CSS3" },
-      { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", alt: "JavaScript", text: "JavaScript" },
-      { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", alt: "React", text: "React" }
-    ]
+  // Estilos dinámicos según el modo
+  const containerStyle = {
+    backgroundColor: isDarkMode ? 'var(--color-background-body-dark)' : '#fff', // gris oscuro / gris claro
+    color: isDarkMode ? '#f1f1f1' : '#272727',
+    transition: 'all 0.3s ease',
+    padding: '0',
+    maxWidth: '900px',
+    margin: '0 auto 2rem',
+    lineHeight: 1.6,
+  };
 
+  const headingStyle = {
+    color: isDarkMode ? '#a2d5f2' : '#1a1a1a',
+    borderBottom: isDarkMode ? '2px solid #555' : '2px solid #ddd',
+    transition: 'all 0.3s ease',
+    margin: '2rem 0 1rem',
+    paddingBottom: '2rem',
+    textAlign: 'center',
+    fontSize: '3rem'
+  };
 
+  const sectionHeadingStyle = {
+    color: isDarkMode ? '#a2d5f2' : '#1a1a1a',
+    borderBottom: isDarkMode ? '2px solid #555' : '2px solid #ddd',
+    paddingBottom: '0.3rem',
+    fontSize: '1.8rem',
+    margin: '2rem 0 1rem'
+  };
 
-  const tools = [
-    { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", alt: "Git", text: "Git" },
-    { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", alt: "GitHub", text: "GitHub" },
-    { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", alt: "VSCode", text: "Visual Studio Code" },
-    { resource: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg", alt: "Vercel", text: "Vercel" }
-  ];
+  const subHeadingStyle = {
+    color: isDarkMode ? '#cfcfcf' : '#444',
+    fontSize: '1.4rem',
+    margin: '1.5rem 0 0.5rem'
+  };
+
+  const paragraphStyle = {
+    color: isDarkMode ? '#e0e0e0' : '#000000',
+    marginBottom: '2rem'
+  };
+
+  const linkStyle = {
+    color: isDarkMode ? '#4ec9b0' : '#1e90ff',
+    textDecoration: 'none'
+  };
 
 
   return (
-    <div className='sectionInicio'>
+    <>
       <Header
+        height="40vh"
         name="Árbol de"
         lastName="Componentes"
         age=""
         city=""
         backgroundImage={componentesHeader}
+        backgroundImageDark={componentesHeaderDark}
         textColor="var(--color-white-yellow)"
       />
 
-      <h1 style={{ padding: '2rem', margin: '0', fontSize: '2.3rem', fontWeight: 'bold' }}>
-        Bienvenidos a nuestra página web
-      </h1>
+      <div className="tree-container" style={containerStyle} translate="no">
+        <h2 style={sectionHeadingStyle}>Componentes React</h2>
+        <p style={paragraphStyle}>
+          El siguiente render tree muestra la estructura jerárquica de los componentes dentro de la aplicación. Permite visualizar cómo se organizan y comunican entre sí, qué componentes actúan como contenedores y cuáles representan piezas reutilizables de UI. Esta vista facilita tanto el mantenimiento como la incorporación de nuevas funcionalidades, al brindar una comprensión clara de las dependencias y el flujo general de la interfaz.
+        </p>
+        <div class="file-tree-wrapper">
+          <img src={renderTreeImage} alt="Render tree" />
+        </div>
+      </div>
 
-      <p style={{ padding: '2rem', margin: '0', fontSize: '1rem', lineHeight: '1.6', background: 'var(--color-white-yellow)' }}>
-        Somos Carina, de La Plata, y Eduardo, de Mar del Plata, estudiantes de la Tecnicatura en Desarrollo de Software a distancia del <a href='https://ifts29.edu.ar/' target="_blank">Instituto de Formación Técnica Superior N° 29.</a><br/>
-        Hemos trabajado juntos en otros proyectos académicos, pero este es nuestro primer trabajo desarrollado con React, realizado para la materia Desarrollo de Sistemas Web Frontend.
-        Nuestro objetivo es crear una página web que refleje nuestra identidad, intereses y habilidades, combinando elegancia y funcionalidad.
-        A través de este proyecto, buscamos aplicar nuestros conocimientos en diseño web y desarrollo frontend, ofreciendo una experiencia que permita a los visitantes conocernos mejor como futuros profesionales del área.
-      </p>
-      <Section title="Stack Tecnológico" cards={stack} CardComponent={Card} />
-      <Section title="Herramientas de Desarrollo" cards={tools} CardComponent={Card} showLine={false} />
       <Footer />
-    </div>
-
+    </>
   );
 }
-
-
-
-
-

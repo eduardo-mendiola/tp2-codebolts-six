@@ -4,7 +4,7 @@ header {
     width: calc(100vw - var(--sidebar-width));
     height: 100vh;
     /* overflow-x: hidden; */
-    background-position: top center;
+    background-position: center;
     position: relative;
     grid-area: header;
 }
