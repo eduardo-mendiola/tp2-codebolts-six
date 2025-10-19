@@ -81,6 +81,9 @@ export default function Simpsons() {
     }
   }, [page]);
 
+  useEffect(() => {
+    setPageInput(page); 
+  }, [page]);
 
 
 
@@ -100,7 +103,7 @@ export default function Simpsons() {
       <div className="tree-container" style={containerStyle} translate="no">
         <h2 style={sectionHeadingStyle}>Todos los personajes de la serie</h2>
         <p style={paragraphStyle}>
-          "Los Simpsons" es una serie de animación estadounidense creada por Matt Groening en 1989. La historia gira en torno a la familia Simpson: Homer, Marge, Bart, Lisa y Maggie, quienes viven en la ciudad ficticia de Springfield. 
+          "Los Simpsons" es una serie de animación estadounidense creada por Matt Groening en 1989. La historia gira en torno a la familia Simpson: Homer, Marge, Bart, Lisa y Maggie, quienes viven en la ciudad ficticia de Springfield.
         </p>
         <p style={paragraphStyle}>
           Los datos de los personajes en esta página se obtienen de manera dinámica utilizando la API de The Simpsons (<a href="https://thesimpsonsapi.com/" target="_blank" rel="noopener noreferrer" style={linkStyle}>https://thesimpsonsapi.com/</a>). La API proporciona información detallada de cada personaje, como nombre, imagen y otros atributos relevantes, que se presentan en tarjetas interactivas. Este enfoque permite practicar conceptos de desarrollo web como consumo de APIs, renderizado dinámico de componentes y manejo de estado en React, ofreciendo una experiencia de aprendizaje práctica y aplicable a proyectos reales.
