@@ -98,6 +98,8 @@ export default function Bitacora() {
           <li>16/10/25: Configuración de path aliases (@) y optimización de imports.</li>
           <li>17/10/25: Implementación de ScrollToTop y ajustes de navegación.</li>
           <li>18/10/25: Finalización de bitácora completa y documentación del proyecto.</li>
+          <li>19/10/25: Creación del componente Simpsons con FlippingCards interactivas.</li>
+          <li>19/10/25: Implementación del componente LugaresArgentina con integración de datos JSON.</li>
         </ol>
 
         <section>
@@ -251,8 +253,32 @@ export default function Bitacora() {
             </ul>
           </p>
 
+          <h3 style={subHeadingStyle}>Simpsons</h3>
+          <p style={paragraphStyle}>Página interactiva dedicada a los personajes de Los Simpson con tarjetas giratorias.
+            <ul>
+              <li><strong>FlippingCard Integration:</strong> Utiliza el componente FlippingCard para mostrar información de personajes</li>
+              <li><strong>Interactive Content:</strong> Tarjetas con información detallada en el frente y reverso</li>
+              <li><strong>Character Gallery:</strong> Galería de personajes icónicos de la serie Los Simpson</li>
+              <li><strong>Responsive Design:</strong> Adaptación automática para diferentes dispositivos</li>
+              <li><strong>Theme Support:</strong> Integración completa con el sistema de modo claro/oscuro</li>
+            </ul>
+          </p>
+
+          <h3 style={subHeadingStyle}>LugaresArgentina</h3>
+          <p style={paragraphStyle}>Componente que muestra lugares turísticos de Argentina con datos dinámicos.
+            <ul>
+              <li><strong>JSON Data Integration:</strong> Carga dinámica de datos desde el archivo lugares.json</li>
+              <li><strong>Card Component Usage:</strong> Utiliza el componente Card para mostrar información de cada lugar</li>
+              <li><strong>Dynamic Content:</strong> Contenido que se actualiza automáticamente desde el archivo de datos</li>
+              <li><strong>Tourism Focus:</strong> Presentación atractiva de destinos turísticos argentinos</li>
+              <li><strong>Error Handling:</strong> Manejo de errores en la carga de datos con useEffect</li>
+              <li><strong>State Management:</strong> Uso de useState para gestionar el estado de los lugares cargados</li>
+            </ul>
+          </p>
+
         </section>
 
+        
         <section>
           <h2 style={sectionHeadingStyle}>Gestión de Estado y Contexto</h2>
           <h3 style={subHeadingStyle}>ThemeContext</h3>
@@ -276,6 +302,8 @@ export default function Bitacora() {
               <li><strong>Eduardo:</strong> Perfil personalizado de Eduardo con animaciones y efectos especiales</li>
               <li><strong>DiagramaCarpetas/RenderTree:</strong> Visualización de la estructura del proyecto</li>
               <li><strong>Bitacora:</strong> Esta página que documenta el proceso de desarrollo</li>
+              <li><strong>Simpsons:</strong> Página interactiva con personajes de Los Simpson usando FlippingCards</li>
+              <li><strong>LugaresArgentina:</strong> Galería de destinos turísticos argentinos con datos dinámicos</li>
             </ul>
           </p>
 

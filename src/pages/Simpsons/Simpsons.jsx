@@ -74,12 +74,18 @@ export default function Simpsons() {
   const [pageInput, setPageInput] = useState(page);
 
   useEffect(() => {
-    setPageInput(page); // Sincroniza el input cuando cambia la página por botones
+    // Al cambiar la página, sube al inicio del contenedor
+    const container = document.querySelector('.main');
+    if (container) {
+      container.scrollIntoView({ behavior: 'smooth' });
+    }
   }, [page]);
 
 
+
+
   return (
-    <>
+    <div className='main'>
       <Header
         height="40vh"
         name="Personajes de"
@@ -94,7 +100,10 @@ export default function Simpsons() {
       <div className="tree-container" style={containerStyle} translate="no">
         <h2 style={sectionHeadingStyle}>Todos los personajes de la serie</h2>
         <p style={paragraphStyle}>
-          "Los Simpsons" es una serie de animación estadounidense creada por Matt Groening en 1989. La historia gira en torno a la familia Simpson: Homer, Marge, Bart, Lisa y Maggie, quienes viven en la ciudad ficticia de Springfield. Con un humor satírico y lleno de referencias culturales, la serie aborda la vida cotidiana, la sociedad y la política de manera divertida y crítica. Es conocida por sus personajes icónicos, frases memorables y su influencia en la cultura popular mundial, convirtiéndose en la serie de animación más longeva de la televisión.
+          "Los Simpsons" es una serie de animación estadounidense creada por Matt Groening en 1989. La historia gira en torno a la familia Simpson: Homer, Marge, Bart, Lisa y Maggie, quienes viven en la ciudad ficticia de Springfield. 
+        </p>
+        <p style={paragraphStyle}>
+          Los datos de los personajes en esta página se obtienen de manera dinámica utilizando la API de The Simpsons (<a href="https://thesimpsonsapi.com/" target="_blank" rel="noopener noreferrer" style={linkStyle}>https://thesimpsonsapi.com/</a>). La API proporciona información detallada de cada personaje, como nombre, imagen y otros atributos relevantes, que se presentan en tarjetas interactivas. Este enfoque permite practicar conceptos de desarrollo web como consumo de APIs, renderizado dinámico de componentes y manejo de estado en React, ofreciendo una experiencia de aprendizaje práctica y aplicable a proyectos reales.
         </p>
         <div className="file-tree-wrapper">
           {characters.length > 0 ? (
@@ -153,6 +162,6 @@ export default function Simpsons() {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 }
