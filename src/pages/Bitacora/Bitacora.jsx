@@ -103,7 +103,8 @@ export default function Bitacora() {
         </ol>
 
         <section>
-          <h2 style={sectionHeadingStyle}>Decisiones de Diseño</h2>
+          <h2 style={sectionHeadingStyle}>Primer Etapa</h2>
+          <h3 style={subHeadingStyle}>Decisiones de Diseño</h3>
           <p style={paragraphStyle}>
             El equipo decidió utilizar una paleta de colores basada en tonos azules y grises para transmitir
             profesionalismo y modernidad. Además, se seleccionó la tipografía 'Roboto' por su legibilidad y estilo
@@ -113,7 +114,7 @@ export default function Bitacora() {
         </section>
 
         <section>
-          <h2 style={sectionHeadingStyle}>Dificultades Encontradas</h2>
+          <h3 style={subHeadingStyle}>Dificultades Encontradas</h3>
           <p style={paragraphStyle}>
             Durante el desarrollo, enfrentamos problemas con la implementación de animaciones en la portada, lo que
             requirió investigar y aplicar técnicas de CSS avanzadas. También hubo desafíos al ajustar el diseño para
@@ -123,7 +124,7 @@ export default function Bitacora() {
         </section>
 
         <section>
-          <h2 style={sectionHeadingStyle}>Cambios Importantes</h2>
+          <h3 style={subHeadingStyle}>Cambios Importantes</h3>
           <p style={paragraphStyle}>
             Inicialmente, se planeó un diseño estático, luego se incorporo interactividad mediante JavaScript
             para mejorar la experiencia del usuario. Además, se reorganizó la estructura de carpetas del proyecto
@@ -133,7 +134,7 @@ export default function Bitacora() {
 
         <section>
           <h2 style={sectionHeadingStyle}>Análisis Completo del Sistema</h2>
-          <h3 style={subHeadingStyle}>Archivos HTML</h3>
+          <h3 style={subHeadingStyle}>Archivos HTML de la primer etapa</h3>
           <p style={paragraphStyle}>
             El sistema incluye varias páginas HTML que representan diferentes secciones del sitio web:
             <ul>
@@ -150,7 +151,7 @@ export default function Bitacora() {
         </section>
 
         <section>
-          <h3 style={subHeadingStyle}>Archivos CSS</h3>
+          <h3 style={subHeadingStyle}>Archivos CSS de la primer etapa</h3>
           <p style={paragraphStyle}>El diseño visual se gestiona mediante varios archivos CSS:
             <ul>
               <li><strong>_reset_edu.css:</strong> Archivo de reinicio para garantizar consistencia entre navegadores.
@@ -164,7 +165,7 @@ export default function Bitacora() {
             </ul>
           </p>
 
-          <h3 style={subHeadingStyle}>Archivos JavaScript</h3>
+          <h3 style={subHeadingStyle}>Archivos JavaScript de la primer etapa</h3>
           <p style={paragraphStyle}>La interactividad del sitio se implementa con varios scripts:
             <ul>
               <li><strong>main.js:</strong> Gestiona el modo oscuro, menús desplegables y popups interactivos.</li>
@@ -178,6 +179,7 @@ export default function Bitacora() {
           </p>
         </section>
         <section>
+          <h2 style={sectionHeadingStyle}>Segunda Etapa</h2>
           <h2 style={sectionHeadingStyle}>Configuración inicial y estructura</h2>
           <p style={paragraphStyle}>Creación del proyecto con React y React Router.
             Configuración de ThemeContext para manejar modo claro/oscuro.
