@@ -40,9 +40,8 @@ El proyecto presenta perfiles individualizados de los integrantes del equipo, p�
 * **02/10/2025:** Implementación de componentes base
 * **08/10/2025:** Desarrollo de componentes interactivos
 * **15/10/2025:** Migración completa de páginas
-* **19/10/2025:** Implementación de ZoomableImage con react-zoom-pan-pinch
 * **19/10/2025:** Finalización de componentes y funcionalidades avanzadas
-* **20/10/2025:** Fecha de entrega
+* **19/10/2025:** Fecha de entrega
 
 ---
 
