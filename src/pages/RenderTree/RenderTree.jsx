@@ -3,8 +3,10 @@ import "@/pages/RenderTree/RenderTree.css";
 import Header from '@/components/Header/Header';
 import componentesHeader from '@/assets/componentes/header_componentes.webp';
 import componentesHeaderDark from '@/assets/componentes/header_componentes_dark.webp';
-import renderTreeImage from '@/assets/componentes/render_tree.png';
+import renderTreeImage from '@/assets/componentes/render_tree.webp';
+import renderTreeImageDark from '@/assets/componentes/render_tree_dark.webp';
 import Footer from '@/components/Footer/Footer';
+import ZoomableImage from '@/components/ZoomableImage/ZoomableImage';
 
 export default function RenderTree() {
   const { isDarkMode } = useTheme();
@@ -54,6 +56,8 @@ export default function RenderTree() {
     textDecoration: 'none'
   };
 
+  const imageTreeSrc = isDarkMode ? renderTreeImageDark : renderTreeImage;
+
 
   return (
     <>
@@ -73,8 +77,11 @@ export default function RenderTree() {
         <p style={paragraphStyle}>
           El siguiente render tree muestra la estructura jerárquica de los componentes dentro de la aplicación. Permite visualizar cómo se organizan y comunican entre sí, qué componentes actúan como contenedores y cuáles representan piezas reutilizables de UI. Esta vista facilita tanto el mantenimiento como la incorporación de nuevas funcionalidades, al brindar una comprensión clara de las dependencias y el flujo general de la interfaz.
         </p>
-        <div class="file-tree-wrapper">
+        {/* <div class="file-tree-wrapper">
           <img src={renderTreeImage} alt="Render tree" />
+        </div> */}
+        <div>
+          <ZoomableImage src={imageTreeSrc} alt="Render tree" />
         </div>
       </div>
 

@@ -107,10 +107,10 @@ a:hover {
 
 /* || ÁRBOL DE ARCHIVOS */
 
-.file-tree-wrapper {
-    text-align: center;    /* ✅ centra solo el bloque */
+/* .file-tree-wrapper {
+    text-align: center;    
     width: 100%;
-}
+} */
 
 /* El pre queda centrado (display:inline-block) pero su texto queda alineado a la izquierda */
 .file-tree {

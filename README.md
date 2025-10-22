@@ -13,7 +13,7 @@
 
 | Nombre              | Página individual     |
 |---------------------|-----------------------|
-| Rodrigues, Carina   | [Carina.jsx](jhttps://github.com/eduardo-mendiola/tp2-codebolts-six/blob/main/src/pages/Carina/Carina.jsx) |
+| Rodrigues, Carina   | [Carina.jsx](https://github.com/eduardo-mendiola/tp2-codebolts-six/blob/main/src/pages/Carina/Carina.jsx) |
 | Mendiola, Eduardo E.| [Eduardo.jsx](https://github.com/eduardo-mendiola/tp2-codebolts-six/blob/main/src/pages/Eduardo/Eduardo.jsx) |
 
 
@@ -25,7 +25,7 @@
 ## Enlaces del Proyecto
 - **Repositorio GitHub:** [tp2-codebolts-six](https://github.com/eduardo-mendiola/tp2-codebolts-six)
 - **Proyecto Desplegado:** [Vercel](https://tp2-codebolts-six.vercel.app)
-- **Rama Principal:** `eduardo`
+- **Rama Principal:** `main`
 
 ## Descripción del Proyecto
 
@@ -40,8 +40,8 @@ El proyecto presenta perfiles individualizados de los integrantes del equipo, p�
 * **02/10/2025:** Implementación de componentes base
 * **08/10/2025:** Desarrollo de componentes interactivos
 * **15/10/2025:** Migración completa de páginas
-* **19/10/2025:** Implementación de componentes finales
-* **20/10/2025:** Fecha de entrega
+* **19/10/2025:** Finalización de componentes y funcionalidades avanzadas
+* **19/10/2025:** Fecha de entrega
 
 ---
 
@@ -139,7 +139,8 @@ src/
 │   ├── ScrollToTop/    # Scroll automático
 │   ├── Section/        # Secciones estructuradas
 │   ├── Sidebar/        # Barra lateral navegacional
-│   └── Title/          # Títulos estilizados
+│   ├── Title/          # Títulos estilizados
+│   └── ZoomableImage/  # Zoom dinamico
 ├── context/            # Context API
 │   └── ThemeContext.jsx
 ├── pages/              # Páginas de la aplicación
@@ -169,6 +170,7 @@ src/
 - **FlippingCard**: Tarjetas 3D con contenido dual
 - **DarkModeButton**: Toggle para cambiar tema
 - **DropDownMenu**: Menú desplegable animado
+- **ZoomableImage**: Componente con zoom, pan y pinch para visualización detallada
 
 ### **Componentes de Navegación**
 - **Sidebar**: Barra lateral con navegación principal
@@ -194,6 +196,7 @@ src/
 ### **Frontend Framework**
 - **React 18** - Biblioteca principal para UI
 - **React Router DOM** - Manejo de rutas SPA
+- **React Zoom Pan Pinch** - Funcionalidad de zoom, pan y pinch para imágenes
 - **Context API** - Gestión de estado global
 
 ### **Build Tools & Development**
@@ -269,6 +272,12 @@ npm run preview
 - **ARIA Labels**: Etiquetas para tecnologías asistivas
 - **Keyboard Navigation**: Navegación por teclado funcional
 
+### **Interacción Avanzada**
+- **Zoom Functionality**: Zoom interactivo en diagramas con react-zoom-pan-pinch
+- **Pan Controls**: Navegación por arrastre en imágenes ampliadas
+- **Pinch Gestures**: Soporte completo para gestos táctiles en móviles
+- **Reset Controls**: Botones y funciones para restaurar vista original
+
 ### **Theme System**
 - **Dark/Light Mode**: Toggle completo entre temas
 - **CSS Variables**: Sistema coherente de colores
@@ -276,7 +285,7 @@ npm run preview
 
 ## Métricas del Proyecto
 
-- **Componentes**: 14 componentes reutilizables
+- **Componentes**: 15 componentes reutilizables
 - **Páginas**: 8 páginas completamente funcionales  
 - **Estilos**: Sistema de variables CSS consistente
 - **Responsive**: 3 breakpoints implementados
@@ -296,7 +305,7 @@ npm run preview
 
 ### **Control de Versiones**
 - **Commits**: Mensajes descriptivos y atómicos
-- **Branching**: Rama principal `eduardo` con features individuales
+- **Branching**: Rama principal `main` con features individuales
 - **Documentation**: README actualizado y bitácora detallada
 
 ## Logros del Equipo
@@ -309,6 +318,7 @@ Sistema de temas dark/light completamente funcional
 
 ### **Funcionalidades Avanzadas**
 Componentes interactivos (FlippingCard, Carrusel)  
+Funcionalidad de zoom avanzada con react-zoom-pan-pinch  
 Carga dinámica de datos desde JSON  
 Diseño responsive en 3 breakpoints  
 Deploy automático en Vercel  
