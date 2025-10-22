@@ -5,6 +5,7 @@ import Footer from "@/components/Footer/Footer.jsx";
 import Card from '@/components/Card/Card.jsx';
 import FlippingCard from '@/components/FlippingCard/FlippingCard';
 import Carrusel from "@/components/Carrusel/Carrusel.jsx";
+import ScrollToTopBtn from "@/components/ScrollToTopButton/ScrollToTopButton";
 
 
 // 🖼️ Importamos las imágenes de Carina
@@ -118,6 +119,7 @@ export default function Carina() {
         meGustaria={meGustaria}
         verbos={verbos}
       />
+      <ScrollToTopBtn/>
       <Footer />
     </>
   );

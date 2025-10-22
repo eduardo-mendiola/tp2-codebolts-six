@@ -5,6 +5,7 @@ import inicioHeaderDark from '@/assets/inicio/inicio_header-dark.webp';
 import Section from '@/components/Section/Section';
 import Card from '@/components/Card/Card.jsx';
 import Footer from '@/components/Footer/Footer';
+import ScrollToTopBtn from "@/components/ScrollToTopButton/ScrollToTopButton";
 import { href } from "react-router-dom";
 
 export default function Inicio() {
@@ -123,6 +124,7 @@ export default function Inicio() {
 
       <Section title="Stack Tecnológico" cards={stack} CardComponent={Card} />
       <Section title="Herramientas de Desarrollo" cards={tools} CardComponent={Card} showLine={false} />
+      <ScrollToTopBtn/>
       <Footer />
     </div>
   );

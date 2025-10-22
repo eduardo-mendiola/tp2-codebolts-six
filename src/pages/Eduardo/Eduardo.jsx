@@ -4,6 +4,7 @@ import Footer from '@/components/Footer/Footer';
 import Card from '@/components/Card/Card.jsx';
 import FlippingCard from '@/components/FlippingCard/FlippingCard';
 import Carrusel from '@/components/Carrusel/Carrusel.jsx';
+import ScrollToTopBtn from '@/components/ScrollToTopButton/ScrollToTopButton';
 
 // || Imagenes importadas ||
 import eduardoHeader from '@/assets/eduardo/eduardo_header.webp';
@@ -114,6 +115,7 @@ const Eduardo = () => {
         meGustaria={meGustaria}
         verbos={verbos}
       />
+      <ScrollToTopBtn/>
       <Footer />
     </>
   );

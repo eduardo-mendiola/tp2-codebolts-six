@@ -6,6 +6,7 @@ import lugaresHeaderDark from '@/assets/lugares/header_lugares_dark.webp';
 import { useEffect, useState } from "react";
 import Footer from '@/components/Footer/Footer';
 import Card from '@/components/Card/Card';
+import ScrollToTopBtn from '@/components/ScrollToTopButton/ScrollToTopButton';
 
 export default function LugaresArgentina() {
   const { isDarkMode } = useTheme();
@@ -81,7 +82,7 @@ export default function LugaresArgentina() {
           )}
         </div>
       </div>
-
+      <ScrollToTopBtn/>
       <Footer />
     </div>
   );

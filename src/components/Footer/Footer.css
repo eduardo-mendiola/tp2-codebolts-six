@@ -17,6 +17,9 @@
 }
 
 @media (max-width:400px){
+  .Footer{
+    width: 100vw;
+  }
   .Footer p{
     font-size: 0.5rem;
   }

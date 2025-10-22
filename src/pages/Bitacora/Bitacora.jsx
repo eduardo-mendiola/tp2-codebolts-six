@@ -4,6 +4,7 @@ import Header from '@/components/Header/Header';
 import carpetasHeader from '@/assets/bitacora/header_bitacora.webp';
 import carpetasHeaderDark from '@/assets/bitacora/header_bitacora_dark.webp';
 import Footer from '@/components/Footer/Footer';
+import ScrollToTopBtn from '@/components/ScrollToTopButton/ScrollToTopButton';
 
 export default function Bitacora() {
   const { isDarkMode } = useTheme();
@@ -454,6 +455,7 @@ export default function Bitacora() {
         </section>
 
       </div>
+      <ScrollToTopBtn/>
       <Footer />
     </>
   );

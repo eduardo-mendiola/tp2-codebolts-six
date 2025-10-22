@@ -6,6 +6,7 @@ import simpsonsHeaderDark from '@/assets/simpsons/header_simpsons_dark.webp';
 import FlippingCard from '@/components/FlippingCard/FlippingCard';
 import { useEffect, useState } from "react";
 import Footer from '@/components/Footer/Footer';
+import ScrollToTopBtn from '@/components/ScrollToTopButton/ScrollToTopButton';
 
 export default function Simpsons() {
   const { isDarkMode } = useTheme();
@@ -160,7 +161,7 @@ export default function Simpsons() {
 
 
       </div>
-
+      <ScrollToTopBtn/>
       <Footer />
     </div>
   );
