@@ -122,6 +122,8 @@ export default function DiagramaCarpetas() {
     "│   │   │   └── 📄 MemberButton.jsx",
     "│   │   ├── 📁 ScrollTop/",
     "│   │   │   └── 📄 ScrollTop.jsx",
+    "│   │   ├── 📁 ScrollToTopBtn/",
+    "│   │   │   └── 📄 ScrollToTopBtn.jsx",
     "│   │   ├── 📁 Section/",
     "│   │   │   ├── 📄 Section.css",
     "│   │   │   └── 📄 Section.jsx",
