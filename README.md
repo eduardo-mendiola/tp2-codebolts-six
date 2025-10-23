@@ -137,6 +137,7 @@ src/
 │   ├── Header/         # Cabecera con imagen de fondo
 │   ├── MemberButton/   # Botones de integrantes
 │   ├── ScrollToTop/    # Scroll automático
+│   ├── ScrollToTopBtn/ # Botón de scroll
 │   ├── Section/        # Secciones estructuradas
 │   ├── Sidebar/        # Barra lateral navegacional
 │   ├── Title/          # Títulos estilizados
