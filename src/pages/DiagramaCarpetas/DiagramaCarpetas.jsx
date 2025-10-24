@@ -3,6 +3,7 @@ import "@/pages/DiagramaCarpetas/DiagramaCarpetas.css";
 import Header from '@/components/Header/Header';
 import carpetasHeader from '@/assets/carpetas/header_carpetas.webp';
 import carpetasHeaderDark from '@/assets/carpetas/header_carpetas_dark.webp';
+import ScrollToTopBtn from '@/components/ScrollToTopButton/ScrollToTopButton';
 import Footer from '@/components/Footer/Footer';
 
 export default function DiagramaCarpetas() {
@@ -213,6 +214,7 @@ export default function DiagramaCarpetas() {
           <pre className="file-tree" style={treeStyle}>{tree}</pre>
         </div>
       </div>
+      <ScrollToTopBtn/>
       <Footer />
     </>
   );
